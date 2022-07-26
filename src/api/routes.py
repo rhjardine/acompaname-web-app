@@ -27,30 +27,18 @@ def get_users():
 
     return jsonify(all_users),200
 
-@api.route('/user', methods=['POST'])
-def add_user():
-    id = request.json.get("id")
-    first_name = request.json.get("first_name")
-    age = request.json.get("age")
-    new_user = {
-        "id": id,
-        "first_name": first_name,
-        "last_name": last_name,
-        "age": age,
-    }
-    all_users.add_user(new_user)
-    return jsonify(first_name),200
-
 
 @api.route("/user", methods=["POST"])
 def handle_users():
     body = request.json
+    first_name=body.get('first_name',None)
+    last_name=body.get('last_name',None)
     email=body.get('email',None)
     password=body.get('password',None)
     if email is None or password is None: return jsonify(
-        "revise el payload de su solicitud..."
+        "Error en la solicitud"
     ), 400
-    new_user=User(email,password)
+    new_user=User(name,email,password)
     return jsonify(new_user.serialize()), 201
 
 # @/api/finanzas
