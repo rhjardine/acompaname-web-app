@@ -18,8 +18,31 @@ def handle_hello():
 
     return jsonify(response_body), 200
 
+@api.route('/users', methods=['GET'])
+def get_users():
 
-@api.route("/users", methods=["POST"])
+    # this is how you can use the Family datastructure by calling its methods
+    users = User.query.all()
+    all_users = list(map(lambda x: x.serialize(), users))
+
+    return jsonify(all_users),200
+
+@api.route('/user', methods=['POST'])
+def add_user():
+    id = request.json.get("id")
+    first_name = request.json.get("first_name")
+    age = request.json.get("age")
+    new_user = {
+        "id": id,
+        "first_name": first_name,
+        "last_name": last_name,
+        "age": age,
+    }
+    all_users.add_user(new_user)
+    return jsonify(first_name),200
+
+
+@api.route("/user", methods=["POST"])
 def handle_users():
     body = request.json
     email=body.get('email',None)
