@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./Register.module.css";
 
 const Register = () => {
   const [singIn, setSingIn] = useState({ user: "", password: "" });
@@ -13,10 +14,18 @@ const Register = () => {
 
   return (
     <>
-      <div className="container">
+      <div className={styles.container}>
         <div className="row justify-content-center align-items-center vh-100">
-          <div className="col-12 col-md-6">
-            <p class="text-start fs-1 text-center">Registro</p>
+          <div
+            className=" col-12 col-md-6"
+            style={{ backgroundColor: "#DDE0AB", borderRadius: 30 }}
+          >
+            <p
+              className="text-start fs-1 text-center"
+              style={{ color: "#1a2537" }}
+            >
+              Registro
+            </p>
             <form>
               <div className="form-group">
                 <label>Nombre Completo</label>
@@ -50,19 +59,20 @@ const Register = () => {
               </div>
               <div>
                 <button
-                  type="button"
+                  type={"button"}
                   className="btn btn-secondary w-100 my-4"
                   onClick={() => handleLogin(singIn)}
+                  style={{ backgroundColor: "#1a2537" }}
                 >
                   Registrar
                 </button>
-                <p class="text-start fs-6 text-center">
+                <p className="text-start fs-6 text-center">
                   Al registrarte, aceptas nuestras Condiciones de uso y Política
                   de privacidad.
                 </p>
-                <p class="text-start fs-6">
+                <p className="text-start fs-6 text-center">
                   ¿Ya tienes una cuenta?
-                  <a href="/Login/" class="text-decoration-none">
+                  <a href="/Login/" className="text-decoration-none">
                     Iniciar Sesion
                   </a>
                 </p>
