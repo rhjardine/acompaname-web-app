@@ -31,8 +31,7 @@ def get_users():
 @api.route("/user", methods=["POST"])
 def handle_users():
     body = request.json
-    first_name=body.get('first_name',None)
-    last_name=body.get('last_name',None)
+    name=body.get('name',None)
     email=body.get('email',None)
     password=body.get('password',None)
     if email is None or password is None: return jsonify(
@@ -40,6 +39,17 @@ def handle_users():
     ), 400
     new_user=User(name,email,password)
     return jsonify(new_user.serialize()), 201
+
+@api.route('/user/<int:user_id>', methods=['DELETE'])
+def delete_user(user_id):
+
+    request_body_user = request.get_json()
+    user1 = User.query.get(user_id)
+    if user1 is None:
+        raise APIException('User not found', status_code=404)
+    db.session.delete(user1)
+    db.session.commit()
+    return jsonify(request_body_user), 200
 
 # @/api/finanzas
 @api.route("/token", methods=["POST"])
