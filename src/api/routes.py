@@ -38,7 +38,10 @@ def handle_users():
         "Error en la solicitud"
     ), 400
     new_user=User(name,email,password)
-    return jsonify(new_user.serialize()), 201
+    auth=create_access_token(identity=new_user.id)
+    return jsonify({
+        "token":auth,
+        "user":new_user.serialize()}), 201
 
 @api.route('/user/<int:user_id>', methods=['DELETE'])
 def delete_user(user_id):

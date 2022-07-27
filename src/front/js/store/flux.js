@@ -34,7 +34,9 @@ const getState = ({ getStore, getActions, setStore }) => {
         }
       },
 
-      signUp: async (requestBody) => {
+      signUp: async ({ ...requestBody }) => {
+        requestBody.name = requestBody.user;
+        delete requestBody.user;
         try {
           const response = await fetch(`${process.env.BACKEND_URL}/api/user`, {
             method: "POST",
@@ -43,7 +45,10 @@ const getState = ({ getStore, getActions, setStore }) => {
               "Content-Type": "application/json",
             },
           });
-
+          if (response.status === 201) {
+            const data = await response.json();
+            localStorage.setItem("jwt-token", data.token);
+          }
           return response.status === 201;
         } catch (error) {
           console.log(error);

@@ -1,15 +1,25 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "./Register.module.css";
+import { Context } from "../store/appContext";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const [singIn, setSingIn] = useState({ user: "", password: "" });
+  const [singIn, setSingIn] = useState({ user: "", password: "", email: "" });
   const handleChange = (event) => {
     setSingIn({ ...singIn, [event.target.name]: event.target.value });
   };
+  const navigate = useNavigate();
 
-  const handleLogin = (data) => {
+  const { store, actions } = useContext(Context);
+
+  const handleLogin = async (data) => {
     // esta funcion registra usuario
-    console.log(data);
+    const result = await actions.signUp(data);
+    if (result) {
+      navigate("/choose");
+    } else {
+      alert("no se puedo crear usuario");
+    }
   };
 
   return (
@@ -34,6 +44,7 @@ const Register = () => {
                   className="form-control"
                   placeholder="Nombre completo"
                   name="user"
+                  value={singIn.user}
                   onChange={handleChange}
                 />
               </div>
@@ -43,7 +54,8 @@ const Register = () => {
                   type={"text"}
                   className="form-control"
                   placeholder="Correo"
-                  name="user"
+                  name="email"
+                  value={singIn.email}
                   onChange={handleChange}
                 />
               </div>
@@ -54,6 +66,7 @@ const Register = () => {
                   className="form-control"
                   placeholder="Contraseña"
                   name="password"
+                  value={singIn.password}
                   onChange={handleChange}
                 />
               </div>
