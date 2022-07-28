@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styles from "./Register.module.css";
+import { Context } from "../store/appContext";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [singIn, setSingIn] = useState({ user: "", password: "" });
@@ -7,9 +9,12 @@ const Login = () => {
     setSingIn({ ...singIn, [event.target.name]: event.target.value });
   };
 
+  const { store, actions } = useContext(Context);
+  const navigate = useNavigate();
+
   const handleLogin = async (data) => {
     // esta funcion registra usuario fetch (intento)
-    const result = await actions.signUp(data);
+    const result = await actions.logIn(data);
     if (result) {
       navigate("/choose");
     } else {
@@ -28,7 +33,7 @@ const Login = () => {
             <p className="text-start fs-1 text-center">Login</p>
             <form>
               <div className="form-group">
-                <label>Usuario</label>
+                <label>Email</label>
                 <input
                   type={"text"}
                   className="form-control"
