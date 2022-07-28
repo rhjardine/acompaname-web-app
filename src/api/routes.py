@@ -83,6 +83,7 @@ def private():
     
     return jsonify({"id": user.id, "email": user.email }), 200
 
+# endpoint de login
 @api.route("/login", methods=["POST"])
 def handleLogin():
     if request.method == "POST":

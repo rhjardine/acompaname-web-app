@@ -7,9 +7,14 @@ const Login = () => {
     setSingIn({ ...singIn, [event.target.name]: event.target.value });
   };
 
-  const handleLogin = (data) => {
-    // esta funcion registra usuario fecth
-    console.log(data);
+  const handleLogin = async (data) => {
+    // esta funcion registra usuario fetch (intento)
+    const result = await actions.signUp(data);
+    if (result) {
+      navigate("/choose");
+    } else {
+      alert("no se puedo iniciar sesión");
+    }
   };
 
   return (
