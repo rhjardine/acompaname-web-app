@@ -82,3 +82,16 @@ def private():
     user = User.query.get(current_user_id)
     
     return jsonify({"id": user.id, "email": user.email }), 200
+
+@api.route("/login", methods=["POST"])
+def handleLogin():
+    if request.method == "POST":
+        email= request.json.get("email", None)
+        password= request.json.get("password", None)
+        print(request.json)
+        user=User.query.filter_by(email=email, password=password).one_or_none()
+        if user is None:
+            return jsonify({"message": "algo salio mal, intenta de nuevo"}), 401
+        access_token= create_access_token(identity= user.id) 
+        return jsonify({"token": access_token}), 200
+        

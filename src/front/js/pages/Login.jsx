@@ -8,7 +8,7 @@ const Login = () => {
   };
 
   const handleLogin = (data) => {
-    // esta funcion registra usuario
+    // esta funcion registra usuario fecth
     console.log(data);
   };
 
