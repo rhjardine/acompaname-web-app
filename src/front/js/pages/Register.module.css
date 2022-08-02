@@ -1,3 +1,48 @@
 .container {
   background-color: #73b1c1;
 }
+.btn2 {
+  color: #ffffff;
+  background-color: #36626a;
+  border-color: #36626a;
+}
+
+.btn2:hover,
+.btn2:focus,
+.btn2:active,
+.btn2.active,
+.open .dropdown-toggle.btn2 {
+  color: #ffffff;
+  background-color: #dde0ab;
+  border-color: #36626a;
+}
+
+.btn2:active,
+.btn2.active,
+.open .dropdown-toggle.btn2 {
+  background-image: none;
+}
+
+.btn2.disabled,
+.btn2[disabled],
+fieldset[disabled] .btn2,
+.btn2.disabled:hover,
+.btn2[disabled]:hover,
+fieldset[disabled] .btn2:hover,
+.btn2.disabled:focus,
+.btn2[disabled]:focus,
+fieldset[disabled] .btn2:focus,
+.btn2.disabled:active,
+.btn2[disabled]:active,
+fieldset[disabled] .btn2:active,
+.btn2.disabled.active,
+.btn2[disabled].active,
+fieldset[disabled] .btn2.active {
+  background-color: #36626a;
+  border-color: #36626a;
+}
+
+.btn2 .badge {
+  color: #36626a;
+  background-color: #ffffff;
+}
