@@ -33,42 +33,32 @@ const Choose = () => {
             <p
               className="text-start fs-1 text-center"
               style={{ color: "#1a2537" }}
-            >
-              Registro
-            </p>
+            ></p>
             <form>
-              <button
-                type="button"
-                className="btn btn-primary btn-rounded"
-                data-mdb-ripple-color="#ffffff"
-              >
-                Primary
-              </button>
-
               <div>
                 <button
                   type={"button"}
-                  className="btn-sample btn-secondary w-100 my-4"
+                  className="tarjeta btn btn-secondary w-100 my-4"
                   onClick={() => handleLogin(singIn)}
-                  style={{ backgroundColor: "#36626A" }}
+                  //style={{ backgroundColor: "#1a2537" }}
                 >
-                  Registrar
+                  Usuario
                 </button>
                 <button
                   type={"button"}
-                  className="btn btn-secondary w-100 my-4"
+                  className="tarjeta btn btn-secondary w-100 my-4"
                   onClick={() => handleLogin(singIn)}
-                  style={{ backgroundColor: "#1a2537" }}
+                  // style={{ backgroundColor: "#1a2537" }}
                 >
-                  Registrar
+                  Cuidador
                 </button>
                 <button
                   type={"button"}
-                  className="btn btn-secondary w-100 my-4"
+                  className="tarjeta btn btn-secondary w-100 my-4"
                   onClick={() => handleLogin(singIn)}
-                  style={{ backgroundColor: "#1a2537" }}
+                  //style={{ backgroundColor: "#1a2537" }}
                 >
-                  Registrar
+                  Paciente
                 </button>
                 <p className="text-start fs-6 text-center">
                   Al registrarte, aceptas nuestras Condiciones de uso y Política

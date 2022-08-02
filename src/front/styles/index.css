@@ -1,3 +1,49 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+.tarjeta {
+  background-color: #36626a;
+  border-radius: 20px;
+  color: black;
+  border-left: 10px #73b1c1 solid;
+  font-size: xx-large;
+}
+
+.tarjeta:hover,
+.tarjeta:focus,
+.tarjeta:active,
+.tarjeta.active,
+.open .dropdown-toggle.tarjeta {
+  color: black;
+  background-color: #feffdf;
+  border-left: 10px #73b1c1 solid;
+}
+
+.tarjeta:active,
+.tarjeta.active,
+.open .dropdown-toggle.tarjeta {
+  background-image: none;
+}
+
+.tarjeta.disabled,
+.tarjeta[disabled],
+fieldset[disabled] .tarjeta,
+.tarjeta.disabled:hover,
+.tarjeta[disabled]:hover,
+fieldset[disabled] .tarjeta:hover,
+.tarjeta.disabled:focus,
+.tarjeta[disabled]:focus,
+fieldset[disabled] .tarjeta:focus,
+.tarjeta.disabled:active,
+.tarjeta[disabled]:active,
+fieldset[disabled] .tarjeta:active,
+.tarjeta.disabled.active,
+.tarjeta[disabled].active,
+fieldset[disabled] .tarjeta.active {
+  background-color: #36626a;
+}
+
+.tarjeta .badge {
+  color: #36626a;
+  background-color: #ffffff;
+}
