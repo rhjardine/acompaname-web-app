@@ -18,30 +18,51 @@ def handle_hello():
 
     return jsonify(response_body), 200
 
-@api.route('/users', methods=['GET'])
-def get_users():
+@api.route('/pacientes', methods=['GET'])
+def get_pacientes():
 
     # this is how you can use the Family datastructure by calling its methods
-    users = User.query.all()
-    all_users = list(map(lambda x: x.serialize(), users))
+    pacientes = Paciente.query.all()
+    all_pacientes = list(map(lambda x: x.serialize(), pacientes))
 
-    return jsonify(all_users),200
+    return jsonify(all_pacientes),200
 
 
-@api.route("/user", methods=["POST"])
-def handle_users():
-    body = request.json
-    name=body.get('name',None)
-    email=body.get('email',None)
-    password=body.get('password',None)
-    if email is None or password is None: return jsonify(
-        "Error en la solicitud"
-    ), 400
-    new_user=User(name,email,password)
-    auth=create_access_token(identity=new_user.id)
-    return jsonify({
+# @api.route("/user", methods=["POST"])
+# def handle_users():
+#     body = request.json
+#     name=body.get('name',None)
+#     email=body.get('email',None)
+#     password=body.get('password',None)
+#     if email is None or password is None: return jsonify(
+#         "Error en la solicitud"
+#     ), 400
+#     new_user=User(name,email,password)
+#     auth=create_access_token(identity=new_user.id)
+#     return jsonify({
+#         "token":auth,
+#         "user":new_user.serialize()}), 201
+
+@api.route("/<string:naturaleza",methods=["POST"])
+def handle_users(naturaleza):
+    if naturaleza=="paciente":
+        body = request.json
+        name=body.get('name',None)
+        email=body.get('email',None)
+        password=body.get('password',None)
+        new_paciente=Paciente(name,email,password)
+        auth=create_access_token(identity=new_paciente.id)
+        return jsonify({
         "token":auth,
-        "user":new_user.serialize()}), 201
+        "paciente":new_paciente.serialize()}), 201
+    else:
+        pass 
+    
+        
+        
+
+
+
 
 @api.route('/user/<int:user_id>', methods=['DELETE'])
 def delete_user(user_id):
