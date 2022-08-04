@@ -18,7 +18,7 @@ const Register = () => {
     if (result) {
       navigate("/choose");
     } else {
-      alert("no se puedo crear usuario");
+      alert("no se puede crear el usuario");
     }
   };
 
@@ -49,7 +49,7 @@ const Register = () => {
                 />
               </div>
               <div className="form-group">
-                <label>Correo</label>
+                <label>Correo Electrónico</label>
                 <input
                   type={"text"}
                   className="form-control"

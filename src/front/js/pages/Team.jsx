@@ -24,10 +24,10 @@ const Team = () => {
             <p class="member-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe</p>
             <a href="" class="button">¡Conóceme!</a>
             <div class="socials-container">
-                <img src="Resources/FacebookBlanco.png" alt="" class="icon">
-                <img src="Resources/InstagramBlanco.png" alt="" class="icon">
-                <img src="Resources/LinkedinBlanco.png" alt="" class="icon">
-                <img src="Resources/TwitterBlanco.png" alt="" class="icon">
+                <img src="Resources/FacebookBlanco.png" alt="" class="icon"/>
+                <img src="Resources/InstagramBlanco.png" alt="" class="icon"/>
+                <img src="Resources/LinkedinBlanco.png" alt="" class="icon"/>
+                <img src="Resources/TwitterBlanco.png" alt="" class="icon"/>
             </div>
         </div>
 
@@ -36,10 +36,10 @@ const Team = () => {
             <p class="member-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe</p>
             <a href="" class="button">¡Conóceme!</a>
             <div class="socials-container">
-                <img src="Resources/FacebookBlanco.png" alt="" class="icon">
-                <img src="Resources/InstagramBlanco.png" alt="" class="icon">
-                <img src="Resources/LinkedinBlanco.png" alt="" class="icon">
-                <img src="Resources/TwitterBlanco.png" alt="" class="icon">
+                <img src="Resources/FacebookBlanco.png" alt="" class="icon"/>
+                <img src="Resources/InstagramBlanco.png" alt="" class="icon"/>
+                <img src="Resources/LinkedinBlanco.png" alt="" class="icon"/>
+                <img src="Resources/TwitterBlanco.png" alt="" class="icon"/>
             </div>
         </div>
 
@@ -48,10 +48,10 @@ const Team = () => {
             <p class="member-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe</p>
             <a href="" class="button">¡Conóceme!</a>
             <div class="socials-container">
-                <img src="Resources/FacebookBlanco.png" alt="" class="icon">
-                <img src="Resources/InstagramBlanco.png" alt="" class="icon">
-                <img src="Resources/LinkedinBlanco.png" alt="" class="icon">
-                <img src="Resources/TwitterBlanco.png" alt="" class="icon">
+                <img src="Resources/FacebookBlanco.png" alt="" class="icon"/>
+                <img src="Resources/InstagramBlanco.png" alt="" class="icon"/>
+                <img src="Resources/LinkedinBlanco.png" alt="" class="icon"/>
+                <img src="Resources/TwitterBlanco.png" alt="" class="icon"/>
             </div>
         </div>
     
@@ -60,14 +60,14 @@ const Team = () => {
                 <p class="member-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe</p>
                 <a href="" class="button">¡Conóceme!</a>
                 <div class="socials-container">
-                    <img src="Resources/FacebookBlanco.png" alt="" class="icon">
-                    <img src="Resources/InstagramBlanco.png" alt="" class="icon">
-                    <img src="Resources/LinkedinBlanco.png" alt="" class="icon">
-                    <img src="Resources/TwitterBlanco.png" alt="" class="icon">
+                    <img src="Resources/FacebookBlanco.png" alt="" class="icon"/>
+                    <img src="Resources/InstagramBlanco.png" alt="" class="icon"/>
+                    <img src="Resources/LinkedinBlanco.png" alt="" class="icon"/>
+                    <img src="Resources/TwitterBlanco.png" alt="" class="icon"/>
                 </div>
             </div>
     </div>
-
+</>
     );
 };
 
