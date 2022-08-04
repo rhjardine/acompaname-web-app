@@ -64,5 +64,9 @@ class Paciente(db.Model):
             # do not serialize the password, its a security breach
         }
 
-
-
+class Age_Biological(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    fumador = db.Column(db.Boolean(), nullable = False)
+    masa_corporal = db.Column(db.Boolean(), nullable = False)
+    vida_sexual = db.Column(db.Boolean(), nullable = False)
+    paciente_id = db.Column(db.Integer(), db.ForeignKey("paciente.id" ), nullable = False) 
