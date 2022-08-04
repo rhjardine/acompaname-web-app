@@ -68,4 +68,3 @@ class Age_Biological(db.Model):
     masa_corporal = db.Column(db.Boolean(), nullable = False)
     vida_sexual = db.Column(db.Boolean(), nullable = False)
     paciente_id = db.Column(db.Integer(), db.ForeignKey("paciente.id" ), nullable = False) 
-
