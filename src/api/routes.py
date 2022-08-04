@@ -2,7 +2,7 @@
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
 from flask import Flask, request, jsonify, url_for, Blueprint
-from api.models import db, User
+from api.models import db, Paciente
 from api.utils import generate_sitemap, APIException
 from flask_jwt_extended import create_access_token,  jwt_required, get_jwt_identity
 
@@ -64,14 +64,14 @@ def handle_users(naturaleza):
 
 
 
-@api.route('/user/<int:user_id>', methods=['DELETE'])
+@api.route('/paciente/<int:paciente_id>', methods=['DELETE'])
 def delete_user(user_id):
 
     request_body_user = request.get_json()
-    user1 = User.query.get(user_id)
-    if user1 is None:
-        raise APIException('User not found', status_code=404)
-    db.session.delete(user1)
+    # # user1 = User.query.get(user_id)
+    # if user1 is None:
+        # raise APIException('User not found', status_code=404)
+    # db.session.delete(user1)
     db.session.commit()
     return jsonify(request_body_user), 200
 

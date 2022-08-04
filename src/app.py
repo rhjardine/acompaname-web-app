@@ -10,7 +10,7 @@ from api.utils import APIException, generate_sitemap
 from api.models import db
 from api.routes import api
 from api.admin import setup_admin
-from api.commands import setup_commands
+# from api.commands import setup_commands
 from flask_jwt_extended import JWTManager
 
 #from models import Person
@@ -38,7 +38,7 @@ CORS(app)
 setup_admin(app)
 
 # add the admin
-setup_commands(app)
+# setup_commands(app)
 
 jwt=JWTManager(app)
 
