@@ -43,7 +43,7 @@ def get_pacientes():
 #         "token":auth,
 #         "user":new_user.serialize()}), 201
 
-@api.route("/<string:naturaleza",methods=["POST"])
+@api.route("/<string:naturaleza>",methods=["POST"])
 def handle_users(naturaleza):
     if naturaleza=="paciente":
         body = request.json
@@ -60,6 +60,8 @@ def handle_users(naturaleza):
     
         
         
+
+
 
 
 
