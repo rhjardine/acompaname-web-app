@@ -50,7 +50,7 @@ class Paciente(db.Model):
     last_name = db.Column(db.String(50), unique=False, nullable=False)
     email = db.Column(db.String(50), unique=True, nullable=False)
     password = db.Column(db.String(50), unique=False, nullable=False)
-
+    age_biological = db.relationship("Age_Biological", backref = "paciente", uselist = True)
 
     def __repr__(self):
         return f'<Paciente {self.email}>'
@@ -62,5 +62,10 @@ class Paciente(db.Model):
             # do not serialize the password, its a security breach
         }
 
-
+class Age_Biological(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    fumador = db.Column(db.Boolean(), nullable = False)
+    masa_corporal = db.Column(db.Boolean(), nullable = False)
+    vida_sexual = db.Column(db.Boolean(), nullable = False)
+    paciente_id = db.Column(db.Integer(), db.ForeignKey("paciente.id" ), nullable = False) 
 
