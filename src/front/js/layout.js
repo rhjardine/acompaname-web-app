@@ -12,6 +12,7 @@ import { Footer } from "./component/footer";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import Choose from "./pages/Choose.jsx";
+import Ubicacion from "./pages/Ubicacion.jsx";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 //create your first component
@@ -27,6 +28,7 @@ const Layout = () => {
           <ScrollToTop>
             <Navbar />
             <Routes>
+              <Route element={<Ubicacion />} path="/ubicacion" />
               <Route element={<Home />} path="/" />
               <Route element={<Login />} path="/login" />
               <Route element={<Register />} path="/register" />

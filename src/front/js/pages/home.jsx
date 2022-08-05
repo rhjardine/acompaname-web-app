@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
