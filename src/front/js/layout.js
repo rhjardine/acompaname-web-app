@@ -12,6 +12,7 @@ import { Footer } from "./component/footer";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import Choose from "./pages/Choose.jsx";
+import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 //create your first component
 const Layout = () => {
@@ -21,21 +22,23 @@ const Layout = () => {
 
   return (
     <div>
-      <BrowserRouter basename={basename}>
-        <ScrollToTop>
-          <Navbar />
-          <Routes>
-            <Route element={<Home />} path="/" />
-            <Route element={<Login />} path="/login" />
-            <Route element={<Register />} path="/register" />
-            <Route element={<Choose />} path="/choose" />
-            <Route element={<Demo />} path="/demo" />
-            <Route element={<Single />} path="/single/:theid" />
-            <Route element={<h1>Not found!</h1>} />
-          </Routes>
-          <Footer />
-        </ScrollToTop>
-      </BrowserRouter>
+      <Wrapper apiKey={process.env.GOOGLE_MAPS_API_KEY}>
+        <BrowserRouter basename={basename}>
+          <ScrollToTop>
+            <Navbar />
+            <Routes>
+              <Route element={<Home />} path="/" />
+              <Route element={<Login />} path="/login" />
+              <Route element={<Register />} path="/register" />
+              <Route element={<Choose />} path="/choose" />
+              <Route element={<Demo />} path="/demo" />
+              <Route element={<Single />} path="/single/:theid" />
+              <Route element={<h1>Not found!</h1>} />
+            </Routes>
+            <Footer />
+          </ScrollToTop>
+        </BrowserRouter>
+      </Wrapper>
     </div>
   );
 };
