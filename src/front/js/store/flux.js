@@ -14,11 +14,33 @@ const getState = ({ getStore, getActions, setStore }) => {
           initial: "white",
         },
       ],
+      pacientePosition: {
+        latitude: undefined,
+        longitude: undefined,
+      },
     },
     actions: {
       // Use getActions to call a function within a fuction
       exampleFunction: () => {
         getActions().logIn(0, "green");
+      },
+
+      getPacientePosition: () => {
+        navigator.geolocation.getCurrentPosition(
+          function (position) {
+            let lat = position.coords.latitude;
+            let long = position.coords.longitude;
+            setStore({
+              userPosition: {
+                latitude: lat,
+                longitude: long,
+              },
+            });
+          },
+          function (error) {
+            console.log("error", error);
+          }
+        );
       },
 
       getMessage: async () => {
@@ -38,13 +60,16 @@ const getState = ({ getStore, getActions, setStore }) => {
         requestBody.name = requestBody.user;
         delete requestBody.user;
         try {
-          const response = await fetch(`${process.env.BACKEND_URL}/api/user`, {
-            method: "POST",
-            body: JSON.stringify(requestBody),
-            headers: {
-              "Content-Type": "application/json",
-            },
-          });
+          const response = await fetch(
+            `${process.env.BACKEND_URL}/api/sign-up`,
+            {
+              method: "POST",
+              body: JSON.stringify(requestBody),
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
           if (response.status === 201) {
             const data = await response.json();
             localStorage.setItem("jwt-token", data.token);
