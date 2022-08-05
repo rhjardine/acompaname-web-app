@@ -51,10 +51,8 @@ def handle_users(naturaleza):
         email=body.get('email',None)
         password=body.get('password',None)
         new_paciente=Paciente(name,email,password)
-        auth=create_access_token(identity=new_paciente.id)
         return jsonify({
-        "token":auth,
-        "paciente":new_paciente.serialize()}), 201
+                "paciente":new_paciente.serialize()}), 201
     else:
         pass 
     
