@@ -46,11 +46,11 @@ class Cuidador(db.Model):
 
 class Paciente(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(50), unique=False, nullable=False)
-    email = db.Column(db.String(50), unique=True, nullable=False)
-    password = db.Column(db.String(50), unique=False, nullable=False)
-    blood = db.Column(db.String(50), unique=True, nullable=False)
-    biological_ages = db.relationship ("Age_Biological", backref="paciente")
+    name = db.Column(db.String(50), unique=False, nullable = False)
+    email = db.Column(db.String(50), unique=True, nullable = False)
+    password = db.Column(db.String(50), unique=False, nullable = False)
+    blood = db.Column(db.String(50), unique=True, nullable = False)
+    biological_ages = db.relationship ("Age_Biological", backref = "paciente")
 
 
 
@@ -66,8 +66,23 @@ class Paciente(db.Model):
         }
 
 class Age_Biological(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key = True)
     fumador = db.Column(db.Boolean(), nullable = False)
-    masa_corporal = db.Column(db.Boolean(), nullable = False)
+    i_masa_corporal = db.Column(db.Boolean(), nullable = False)
     vida_sexual = db.Column(db.Boolean(), nullable = False)
+    etnia = db.Column(db.String(30), unique=False, nullable = False)
+    agudeza_visual = db.Column(db.Boolean(), nullable = False)
+    peso_corporal = db.Column(db.Boolean(), nullable = False)
+    med_cintura = db.Column(db.Integer(), nullable = False)
+    med_ante_brazo = db.Column(db.Integer(), nullable = False)
     paciente_id = db.Column(db.Integer(), db.ForeignKey("paciente.id" ), nullable = False) 
+    result_telomeros = db.Column(db.Boolean(), nullable = False)
+
+    # class perfil_epigenetico(db.model):
+
+
+    
+    
+
+
+
