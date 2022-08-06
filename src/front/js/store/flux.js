@@ -25,23 +25,23 @@ const getState = ({ getStore, getActions, setStore }) => {
         getActions().logIn(0, "green");
       },
 
-      getPacientePosition: () => {
-        navigator.geolocation.getCurrentPosition(
-          function (position) {
-            let lat = position.coords.latitude;
-            let long = position.coords.longitude;
-            setStore({
-              userPosition: {
-                latitude: lat,
-                longitude: long,
-              },
-            });
-          },
-          function (error) {
-            console.log("error", error);
-          }
-        );
-      },
+      // getPacientePosition: () => {
+      //   navigator.geolocation.getCurrentPosition(
+      //     function (position) {
+      //       let lat = position.coords.latitude;
+      //       let long = position.coords.longitude;
+      //       setStore({
+      //         userPosition: {
+      //           latitude: lat,
+      //           longitude: long,
+      //         },
+      //       });
+      //     },
+      //     function (error) {
+      //       console.log("error", error);
+      //     }
+      //   );
+      // },
 
       getMessage: async () => {
         try {
