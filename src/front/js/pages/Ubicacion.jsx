@@ -4,18 +4,15 @@ const Ubicacion = () => {
   const ref = useRef();
   const [map, setMap] = useState();
   useEffect(() => {
+    const latng = {
+      lat: 10.47689358642617,
+      lng: -66.8926801365146,
+    };
     setMap(
-      new window.google.maps.Map(
-        ref.current,
-        {
-          // center,
-
-          lat: 10.47689358642617,
-          lng: -66.8926801365146,
-        },
-        // zoom,
-        14
-      )
+      new window.google.maps.Map(ref.current, {
+        center: latng,
+        zoom: 14,
+      })
     );
   }, []);
   useEffect(() => {
