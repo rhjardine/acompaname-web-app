@@ -5,13 +5,24 @@ import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import ListGroup from "react-bootstrap/ListGroup";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const alertClicked = () => {
+    alert("You clicked the third ListGroupItem");
+  };
 
   return (
     <>
-      <Navbar collapseOnSelect expand="d-block" bg="dark" variant="dark">
+      {/* <Navbar collapseOnSelect expand="d-block" bg="dark" variant="dark">
         <Navbar.Brand href="#home">AcompañaME</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
@@ -37,7 +48,38 @@ export const Home = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
+      </Navbar> */}
+      <Button variant="success m-5" onClick={handleShow}>
+        Menu
+      </Button>
+
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>AcompañaME</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <div className="dropdown mt-3">
+            <ListGroup defaultActiveKey="#link1">
+              <Button href="./" variant="success">
+                Home
+              </Button>{" "}
+              <Button href="/Register" variant="success">
+                Registrate
+              </Button>{" "}
+              <Button href="/login" variant="success">
+                Login
+              </Button>{" "}
+              <Button href="/login" variant="success">
+                Preguntas
+              </Button>{" "}
+              <Button href="/login" variant="success">
+                Contactanos
+              </Button>{" "}
+            </ListGroup>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+
       <div className="container w-75%">
         <div className="container w-75%">
           <div className="container w-75%">
