@@ -1,0 +1,14 @@
+.card2 {
+  width: 300px;
+  height: 400px;
+  background-color: red;
+  border-radius: 38px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backface-visibility: hidden;
+}
