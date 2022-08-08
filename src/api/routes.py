@@ -55,6 +55,14 @@ def handle_users(naturaleza):
                 "paciente":new_paciente.serialize()}), 201
     else:
         pass 
+        naturaleza=="cuidador"
+        body = request.json
+        name=body.get('name',None)
+        email=body.get('email',None)
+        password=body.get('password',None)
+        new_cuidador=Cuidador(name,email,password)
+        return jsonify({
+                "cuidador":new_cuidador.serialize()}), 201
     
         
         

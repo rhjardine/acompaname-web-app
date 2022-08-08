@@ -31,6 +31,7 @@ class Cuidador(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), unique=False, nullable=False)
     email = db.Column(db.String(50), unique=True, nullable=False)
+    password = db.Column(db.String(50), unique=False, nullable = False)
    
 
     def __repr__(self):
@@ -49,8 +50,6 @@ class Paciente(db.Model):
     name = db.Column(db.String(50), unique=False, nullable = False)
     email = db.Column(db.String(50), unique=True, nullable = False)
     password = db.Column(db.String(50), unique=False, nullable = False)
-
-    blood = db.Column(db.String(50), unique=True, nullable = False)
     biological_ages = db.relationship ("Biological_Age", back_populates = "paciente")
 # =======
 #     blood = db.Column(db.String(50), nullable = False)
@@ -72,6 +71,8 @@ class Paciente(db.Model):
 class Biological_Age(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     sexo_genero = db.Column(db.String(30), unique=False, nullable = False)
+    blood = db.Column(db.String(50), unique=False, nullable = False)
+    edad = db.Column(db.Integer(), nullable = False)
     raza_etni = db.Column(db.String(30), unique=False, nullable = False)
     longe_hist = db.Column(db.String(30), unique=False, nullable = False)
     frec_vida_sexual = db.Column(db.String(), nullable = False)
