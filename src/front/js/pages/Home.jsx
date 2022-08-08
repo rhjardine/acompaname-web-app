@@ -9,6 +9,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import ListGroup from "react-bootstrap/ListGroup";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import { Footer } from "../component/footer";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -260,9 +261,15 @@ export const Home = () => {
                 geográfica.
               </Card.Text>
               <div className="d-grid gap-2">
-                <Button variant="light" size="lg">
-                  <h3>Accede</h3>
-                </Button>
+                <Link
+                  type="button"
+                  className="btn btn-light btn-sm"
+                  variant="light"
+                  size="lg"
+                  to={`/ubicacion`}
+                >
+                  {"Accede"}
+                </Link>
               </div>
             </Card.Body>
           </Card>
