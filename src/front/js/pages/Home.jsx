@@ -268,7 +268,7 @@ export const Home = () => {
                   size="lg"
                   to={`/ubicacion`}
                 >
-                  {"Accede"}
+                  <h3>Accede</h3>
                 </Link>
               </div>
             </Card.Body>
