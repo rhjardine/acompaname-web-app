@@ -29,9 +29,29 @@ const InfoUtilidades = () => {
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div className="accordion-body">
-                        Placeholder content for this accordion, which is intended to
-                        demonstrate the <code>.accordion-flush</code> class. This is
-                        the first item's accordion body.
+                      ¿Qué es Alzhéimer? 
+                      La enfermedad de Alzheimer es un trastorno cerebral que destruye lentamente la memoria, la capacidad de pensar y, con el tiempo, la habilidad de llevar a cabo hasta las tareas más sencillas. 
+                      <br></br>
+                      Etapas
+                      <br></br>
+                      Etapa temprana: la persona puede desenvolverse de forma independiente. Es posible que pueda conducir, trabajar y participar de actividades sociales. Pero, puede sentir que tiene episodios de pérdida de memoria como olvidarse palabras familiares o la ubicación de objetos cotidianos. 
+                      <br></br>
+                      Etapa media: es la fase más prolongada, puede durar muchos años. Además de los síntomas anteriores puede presentar desorientación, confundir palabras, cambios en su temperamento como enojo, frustración y actúa de forma inesperada. También ya deja de hacer ciertas tareas cotidianas debido al daño de las células nerviosas del cerebro.
+                      <br></br>
+                      Etapa final: las personas pierden la capacidad de responder a su entorno, de llevar adelante una conversación y de controlar los movimientos. A medida que la memoria y las habilidades cognitivas empeoran, es posible que ocurran cambios significativos en la personalidad. Los pacientes requieren de ayuda en su totalidad
+                      <br></br>
+
+                      ¿Cómo cuidarme?
+                      <br></br>
+                      Con ayuda de su familiar o cuidador deben hacer diversos planes que le permita mantener estimulada la parte cognitiva. Estas son algunas cosas que usted puede hacer:
+                      <br></br>
+                      +Haga actividades que concuerde con algo que, siendo paciente con Alzheimer, puede hacer, ejemplo: tareas domésticas, jugar memoria, pintar, ordenar, visitar familiares y recordar momentos con fotografías.
+                      <br></br>
+                      +Seleccione actividades que puedan ser divertidas tanto para usted como paciente y su familiar o cuidador.
+                      <br></br>
+                      +Dejarse siempre ayudar.
+                      <br></br>
+                      +Evite frustrarse, téngase paciencia.
                       </div>
                     </div>
                   </div>
