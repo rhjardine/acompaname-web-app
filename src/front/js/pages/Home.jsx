@@ -302,7 +302,7 @@ export const Home = () => {
               </Card>
               <Card
                 style={{
-                  width: "16rem",
+                  width: "18rem",
                   padding: "20px",
                   margin: "40px 10px 40px 10px",
                   backgroundColor: "#feffdf",
