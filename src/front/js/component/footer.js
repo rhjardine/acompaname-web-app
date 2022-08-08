@@ -1,23 +1,57 @@
 import React, { Component } from "react";
 
-export const Footer = () => (
-  <footer className="footer mt-auto py-5 text-center">
-    <div className="container-fluid bg-dark text-light text-center mb-0 py-5">
-      <p className="mb-0">
-        Proyecto WebApp AcompañaME - José Perestrelo - Pedro Maldonado -
-        Robianna De La Parra - Richard Jardine
-      </p>
-      <p>
-        Cohorte #11 <i className="fa fa-heart text-danger" /> by{" "}
-        <a href="http://www.4geeksacademy.com">4Geeks Academy</a>
-      </p>{" "}
-    </div>
-  </footer>
-);
+import "./Footer/Footer.css";
 
-{
-  /* <p>
-Proyecto <i className="fa fa-heart text-danger" /> by{" "}
-<a href="http://www.4geeksacademy.com">4Geeks Academy</a>
-    </p> */
-}
+export const Footer = () => (
+  <section className="footer">
+    <hr className="footer-seperator" />
+    <section className="footer-social-media">
+      <a
+        href="http://www.4geeksacademy.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        4Geeks Academy Venezuela
+      </a>
+    </section>
+    <section className="footer-info">
+      <section className="footer-info-left">
+        <section className="footer-info__name">
+          Proyecto Web App AcompañaME (MVP)
+          <br />
+          Participantes:
+        </section>
+        <section className="footer-info__returns">
+          Robianna De La Parra
+          <br />
+          José Perestrelo
+          <br />
+          Pedro Maldonado
+          <br />
+          Richard Jardine
+        </section>
+      </section>
+      <section className="footer-info-center">
+        <section className="footer-info__email"></section>
+        <section className="footer-info__terms">
+          Terminos y Condiciones
+          <br />
+          Todos los Derechos Reservados
+        </section>
+      </section>
+      <section className="footer-info-right">
+        <section className="footer-info__number">Año 2022</section>
+        <section className="footer-info__contact">
+          Profesores
+          <br />
+          Ernesto Medina
+          <br />
+          Bryan Garcia
+          <br />
+          José Morrone
+        </section>
+      </section>
+    </section>
+    <hr className="footer-seperator" />
+  </section>
+);

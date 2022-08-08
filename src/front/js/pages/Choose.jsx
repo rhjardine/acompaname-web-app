@@ -42,7 +42,7 @@ const Choose = () => {
                   onClick={() => handleLogin(singIn)}
                   //style={{ backgroundColor: "#1a2537" }}
                 >
-                  Usuario
+                Invitado
                 </button>
                 <button
                   type={"button"}
