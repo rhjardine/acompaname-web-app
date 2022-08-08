@@ -56,12 +56,12 @@ const getState = ({ getStore, getActions, setStore }) => {
         }
       },
 
-      signUp: async ({ ...requestBody }) => {
+      signUp: async ({ ...requestBody }, naturaleza) => {
         requestBody.name = requestBody.user;
         delete requestBody.user;
         try {
           const response = await fetch(
-            `${process.env.BACKEND_URL}/api/sign-up`,
+            `${process.env.BACKEND_URL}/api/${naturaleza}`,
             {
               method: "POST",
               body: JSON.stringify(requestBody),

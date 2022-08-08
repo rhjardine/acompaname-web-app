@@ -12,9 +12,9 @@ const Choose = () => {
   const { store, actions } = useContext(Context);
   const navigate = useNavigate();
 
-  const handleLogin = async (data) => {
+  const handleLogin = async (data, naturaleza) => {
     // esta funcion registra usuario fetch (intento)
-    const result = await actions.logIn(data);
+    const result = await actions.logIn(data, naturaleza);
     if (result) {
       navigate("/choose");
     } else {
@@ -39,15 +39,15 @@ const Choose = () => {
                 <button
                   type={"button"}
                   className="tarjeta btn btn-secondary w-100 my-4"
-                  onClick={() => handleLogin(singIn)}
+                  onClick={() => navigate("/home")}
                   //style={{ backgroundColor: "#1a2537" }}
                 >
-                Invitado
+                  Invitado
                 </button>
                 <button
                   type={"button"}
                   className="tarjeta btn btn-secondary w-100 my-4"
-                  onClick={() => handleLogin(singIn)}
+                  onClick={() => navigate("/home")}
                   // style={{ backgroundColor: "#1a2537" }}
                 >
                   Cuidador
@@ -55,7 +55,7 @@ const Choose = () => {
                 <button
                   type={"button"}
                   className="tarjeta btn btn-secondary w-100 my-4"
-                  onClick={() => handleLogin(singIn)}
+                  // onClick={() => navigate(/)}
                   //style={{ backgroundColor: "#1a2537" }}
                 >
                   Paciente
