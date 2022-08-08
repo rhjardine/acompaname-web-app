@@ -8,6 +8,7 @@ import Row from "react-bootstrap/Row";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import ListGroup from "react-bootstrap/ListGroup";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
+import { Footer } from "../component/footer";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);

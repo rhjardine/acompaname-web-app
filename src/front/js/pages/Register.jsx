@@ -18,7 +18,7 @@ const Register = () => {
     if (result) {
       navigate("/choose");
     } else {
-      alert("no se puede crear el usuario");
+      alert("El usuario no puede ser creado. Revise e intenté de nuevo");
     }
   };
 
