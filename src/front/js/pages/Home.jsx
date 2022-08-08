@@ -325,9 +325,14 @@ export const Home = () => {
                 asi como los avances que se han obtenido.
               </Card.Text>
               <div className="d-grid gap-2">
-                <Button variant="light" size="lg">
+                <Link
+                  variant="light"
+                  size="lg"
+                  className="btn btn-light"
+                  to={"/informacion/utilidades"}
+                >
                   <h3>Accede</h3>
-                </Button>
+                </Link>
               </div>
             </Card.Body>
           </Card>

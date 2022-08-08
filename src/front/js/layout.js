@@ -14,6 +14,7 @@ import Register from "./pages/Register.jsx";
 import Choose from "./pages/Choose.jsx";
 import Ubicacion from "./pages/Ubicacion.jsx";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import InfoUtilidades from "./component/InfoUtilidades";
 
 //create your first component
 const Layout = () => {
@@ -35,7 +36,9 @@ const Layout = () => {
               <Route element={<Choose />} path="/choose" />
               <Route element={<Demo />} path="/demo" />
               <Route element={<Single />} path="/single/:theid" />
+              <Route element={<InfoUtilidades />} path="/informacion/utilidades"/>
               <Route element={<h1>Not found!</h1>} />
+              
             </Routes>
             <Footer />
           </ScrollToTop>
