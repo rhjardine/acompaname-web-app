@@ -243,20 +243,20 @@ const InfoUtilidades = () => {
                   <div className="accordion-body">
                   <h2> <u>Mira las últimas publicaciones sobre alzheimer:</u></h2>
                   <br></br>
-                  <h6>Identificadas variantes en APOE que reducen riesgo de desarrollar Alzheimer <a href="https://genotipia.com/genetica_medica_news/apoe4-alzheimer-2/">(Haga clic aquí)</a></h6>
+                  <h6>Identificadas variantes en APOE que reducen riesgo de desarrollar Alzheimer <a href="https://genotipia.com/genetica_medica_news/apoe4-alzheimer-2/" target="_blank">(Haga clic aquí)</a></h6>
                   <br></br>
-                  <h6>Mejora el mapa genómico de la enfermedad de Alzheimer <a href="https://genotipia.com/genetica_medica_news/mejora-el-mapa-genomico-alzheimer/">(Haga clic aquí)</a></h6>
+                  <h6>Mejora el mapa genómico de la enfermedad de Alzheimer <a href="https://genotipia.com/genetica_medica_news/mejora-el-mapa-genomico-alzheimer/" target="_blank">(Haga clic aquí)</a></h6>
                   <br></br>
-                  <h6>Descubren una proteína que protege al cerebro de la enfermedad de Alzheimer <a href="https://genotipia.com/genetica_medica_news/proteina-protege-alzheimer/">(Haga clic aquí)</a></h6>
+                  <h6>Descubren una proteína que protege al cerebro de la enfermedad de Alzheimer <a href="https://genotipia.com/genetica_medica_news/proteina-protege-alzheimer/" target="_blank">(Haga clic aquí)</a></h6>
                   <br></br>
                   <br></br>
                   <h2> <u>Manuales sobre alzhéimer:</u></h2>
                   <br></br>
-                  <h6>Guía para Familiares de Enfermos de Alzheimer:“Querer cuidar, saber hacerlo” <a href="https://fiapam.org/wp-content/uploads/2013/12/GuiaAlzheimer.pdf">(Haga clic aquí)</a></h6>
+                  <h6>Guía para Familiares de Enfermos de Alzheimer:“Querer cuidar, saber hacerlo” <a href="https://fiapam.org/wp-content/uploads/2013/12/GuiaAlzheimer.pdf" target="_blank">(Haga clic aquí)</a></h6>
                   <br></br>
-                  <h6>Manual para el cuidador de pacientes con demencia <a href="https://www.imserso.es/InterPresent1/groups/imserso/documents/binario/03_manual_pacientesdemencia.pdf">(Hagaclic aquí)</a></h6>
+                  <h6>Manual para el cuidador de pacientes con demencia <a href="https://www.imserso.es/InterPresent1/groups/imserso/documents/binario/03_manual_pacientesdemencia.pdf" target="_blank">(Hagaclic aquí)</a></h6>
                   <br></br>
-                  <h6>La Enfermedad de Alzheimer: Manual del cuidador <a href="https://www.snpv.org/contenidos/files/snpv_enlaces/0003.pdf">(Haga clic aquí)</a></h6>
+                  <h6>La Enfermedad de Alzheimer: Manual del cuidador <a href="https://www.snpv.org/contenidos/files/snpv_enlaces/0003.pdf" target="_blank">(Haga clic aquí)</a></h6>
                   <br></br>
                   <br></br>
                   <h2> <u>Películas, documentales y series:</u></h2>
@@ -293,11 +293,11 @@ const InfoUtilidades = () => {
               >
                 <div className="accordion-body">
 
-                <h6>Ejercicios para personas con alzheimer en etapa inicial <a href="https://www.youtube.com/watch?v=VBZCRtfCOoE">(Haga clic aquí)</a></h6>
+                <h6>Ejercicios para personas con alzheimer en etapa inicial <a href="https://www.youtube.com/watch?v=VBZCRtfCOoE" target="_blank">(Haga clic aquí)</a></h6>
                 <br></br>
-                <h6>Ejercicios para mejorar el equilibrio y marcha autónoma <a href="https://www.youtube.com/watch?v=Ta3O86qZrms">(Haga clic aquí)</a></h6>
+                <h6>Ejercicios para mejorar el equilibrio y marcha autónoma <a href="https://www.youtube.com/watch?v=Ta3O86qZrms" target="_blank">(Haga clic aquí)</a></h6>
                 <br></br>
-                <h6>Ejercicio de fisioterapia para personas con alzheimer <a href="https://www.youtube.com/watch?v=tewMao6oWik">(Haga clic aquí)</a></h6>
+                <h6>Ejercicio de fisioterapia para personas con alzheimer <a href="https://www.youtube.com/watch?v=tewMao6oWik" target="_blank">(Haga clic aquí)</a></h6>
 
                 </div>
               </div>
