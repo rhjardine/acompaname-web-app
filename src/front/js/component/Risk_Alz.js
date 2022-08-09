@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+io_import { useForm } from "react-hook-form";
 import { edadValidator } from "./validators";
 
 const Formulario = () => {

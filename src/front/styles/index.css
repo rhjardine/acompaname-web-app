@@ -47,3 +47,8 @@ fieldset[disabled] .tarjeta.active {
   color: #36626a;
   background-color: #ffffff;
 }
+
+.boton.hover {
+  color: red
+
+}
