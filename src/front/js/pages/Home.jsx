@@ -7,10 +7,9 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import ListGroup from "react-bootstrap/ListGroup";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
-import { Footer } from "../component/footer";
 import { Link } from "react-router-dom";
 import styles from "./Register.module.css";
+import Stack from "react-bootstrap/Stack";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -55,35 +54,61 @@ export const Home = () => {
       </Navbar> */}
         <div className="container" style={{ backgroundColor: "#dde0ab" }}>
           <Button
-            variant="success m-5"
+            variant="succes m-3"
             onClick={handleShow}
             style={{ backgroundColor: "#73b1c1", width: "250px" }}
           >
             Menu
           </Button>
 
-          <Offcanvas show={show} onHide={handleClose}>
+          <Offcanvas
+            show={show}
+            onHide={handleClose}
+            style={{ backgroundColor: "#dde0ab", width: "250px" }}
+          >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>AcompañaME</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <div className="dropdown mt-3">
                 <ListGroup defaultActiveKey="#link1">
-                  <Button href="./" variant="success">
-                    Home
-                  </Button>{" "}
-                  <Button href="/Register" variant="success">
-                    Registrate
-                  </Button>{" "}
-                  <Button href="/login" variant="success">
-                    Login
-                  </Button>{" "}
-                  <Button href="/login" variant="success">
-                    Preguntas
-                  </Button>{" "}
-                  <Button href="/login" variant="success">
-                    Contactanos
-                  </Button>{" "}
+                  <Stack gap={3}>
+                    <Button
+                      href="./"
+                      variant="succes"
+                      style={{ backgroundColor: "#73b1c1", padding: "5px" }}
+                    >
+                      Home
+                    </Button>{" "}
+                    <Button
+                      href="/Register"
+                      variant="succes"
+                      style={{ backgroundColor: "#73b1c1" }}
+                    >
+                      Registrate
+                    </Button>{" "}
+                    <Button
+                      href="/login"
+                      variant="succes"
+                      style={{ backgroundColor: "#73b1c1" }}
+                    >
+                      Login
+                    </Button>{" "}
+                    <Button
+                      href="/login"
+                      variant="succes"
+                      style={{ backgroundColor: "#73b1c1" }}
+                    >
+                      Preguntas
+                    </Button>{" "}
+                    <Button
+                      href="/login"
+                      variant="succes"
+                      style={{ backgroundColor: "#73b1c1" }}
+                    >
+                      Contactanos
+                    </Button>{" "}
+                  </Stack>
                 </ListGroup>
               </div>
             </Offcanvas.Body>
