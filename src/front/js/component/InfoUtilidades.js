@@ -29,7 +29,7 @@ const InfoUtilidades = () => {
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div className="accordion-body">
-                    ¿Qué es Alzhéimer? La enfermedad de Alzheimer es un
+                    ¿Qué es Alzheimer? La enfermedad de Alzheimer es un
                     trastorno cerebral que destruye lentamente la memoria, la
                     capacidad de pensar y, con el tiempo, la habilidad de llevar
                     a cabo hasta las tareas más sencillas.
@@ -101,7 +101,7 @@ const InfoUtilidades = () => {
                   <div className="accordion-body">
                     Pasos tras el diagnóstico
                     <br></br>
-                    Un ser querido con alzhéimer necesitará apoyo en los
+                    Un ser querido con alzheimer necesitará apoyo en los
                     diferentes ámbitos de su vida tras el diagnóstico, por lo
                     que debe primeramente ser empático y documentarse sobre la
                     enfermedad para saber cómo su familiar percibirá de ahora en
@@ -229,7 +229,7 @@ const InfoUtilidades = () => {
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div className="accordion-body">
-                  Mira las últimas publicaciones sobre alzhéimer:
+                  Mira las últimas publicaciones sobre alzheimer:
                   <br></br>
                   Identificadas variantes en APOE que reducen riesgo de desarrollar Alzheimer (haz clic aquí)
                   <br></br>
@@ -251,7 +251,7 @@ const InfoUtilidades = () => {
                   <br></br>
                   Piedad. Documental sobre el alzhéimer. Por Otto Roca.
                   <br></br>
-                  Still Alice. Película sobre la vida de una profesora tras ser diagnosticada con alzhéimer. Por Richard Glatzer, Wash Westmoreland.
+                  Still Alice. Película sobre la vida de una profesora tras ser diagnosticada con alzheimer. Por Richard Glatzer, Wash Westmoreland.
                   <br></br>
                   Bicicleta, cuchara y manzana. Documental sobre la vida del político catalán, Pasqual Maragall, y su enfermedad alzhéimer. Por Carles Bosch.
 
@@ -281,11 +281,11 @@ const InfoUtilidades = () => {
               >
                 <div className="accordion-body">
 
-                Ejercicios para personas con alzhéimer en etapa inicial (haz clic aquí)
+                Ejercicios para personas con alzheimer en etapa inicial (haz clic aquí)
                 <br></br>
                 Ejercicios para mejorar el equilibrio y marcha autónoma (haz clic aquí)
                 <br></br>
-                Ejercicio de fisioterapia para personas con alzhéimer (haz clic aquí)
+                Ejercicio de fisioterapia para personas con alzheimer (haz clic aquí)
 
                 </div>
               </div>

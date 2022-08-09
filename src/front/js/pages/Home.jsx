@@ -57,7 +57,7 @@ export const Home = () => {
           onClick={handleShow}
           style={{ backgroundColor: "#73b1c1", width: "250px" }}
         >
-          Menu
+          Menú
         </Button>
 
         <Offcanvas
@@ -66,7 +66,7 @@ export const Home = () => {
           style={{ backgroundColor: "#dde0ab", width: "250px" }}
         >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title>AcompañaME</Offcanvas.Title>
+            <Offcanvas.Title>AcompáñaME</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <div className="dropdown mt-3">
@@ -105,7 +105,7 @@ export const Home = () => {
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
-                    Contactanos
+                    Contáctanos
                   </Button>{" "}
                 </Stack>
               </ListGroup>
@@ -124,7 +124,7 @@ export const Home = () => {
                   style={{ borderRadius: "20px" }}
                 />
                 <Carousel.Caption>
-                  <h3>Aqui estamos para ti</h3>
+                  <h3>Aquí estamos para ti</h3>
                   <p>
                     "Queremos acompañarte en tu proceso de salud con
                     alternativas que mejoren tu calidad de vida"
@@ -158,9 +158,9 @@ export const Home = () => {
                 <Carousel.Caption>
                   <h3>Establece un Estilo de Vida Saludable</h3>
                   <p>
-                    Sabias que las enfermedad de Alzheimer viene condicionada
-                    por un 20% de componente genetico y mas de 70% de aspectos
-                    epigéneticos.
+                    ¿Sabías que la enfermedad de Alzheimer viene condicionada
+                    por un 20% de componente genético y más de 70% de aspectos
+                    epigéneticos?
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -175,9 +175,9 @@ export const Home = () => {
                 <Carousel.Caption>
                   <h3>Estilo de Vida Saludable</h3>
                   <p>
-                    Sabias que las enfermedad de Alzheimer viene condicionada
-                    por un 20% de componente genetico y mas de 70% de aspectos
-                    epigéneticos.
+                    ¿Sabías que la enfermedad de Alzheimer viene condicionada
+                    por un 20% de componente genético y más de 70% de aspectos
+                    epigéneticos?
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -191,13 +191,13 @@ export const Home = () => {
 
                 <Carousel.Caption>
                   <h3 style={{ color: "black" }}>
-                    Los cuidadores deben cuidarse y evitar el sindrome de fatiga
+                    Los cuidadores deben cuidarse y evitar el síndrome de fatiga
                     crónica
                   </h3>
                   <p style={{ color: "black" }}>
-                    Sabias que las enfermedad de Alzheimer viene condicionada
-                    por un 20% de componente genetico y mas de 70% de aspectos
-                    epigéneticos.
+                    ¿Sabías que las enfermedad de Alzheimer viene condicionada
+                    por un 20% de componente genético y más de 70% de aspectos
+                    epigéneticos?
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -211,13 +211,13 @@ export const Home = () => {
 
                 <Carousel.Caption>
                   <h3>
-                    Conoces los nuevos biomarcadores para predecir y/o
-                    diagnosticar la enfermedad de Alzheimer
+                    ¿Conoces los nuevos biomarcadores para predecir y
+                    diagnosticar la enfermedad de Alzheimer?
                   </h3>
                   <p>
-                    Sabias que las enfermedad de Alzheimer viene condicionada
-                    por un 20% de componente genetico y mas de 70% de aspectos
-                    epigéneticos.
+                    ¿Sabías que las enfermedad de Alzheimer viene condicionada
+                    por un 20% de componente genético y más de 70% de aspectos
+                    epigéneticos?
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -284,7 +284,7 @@ export const Home = () => {
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   Explore los nuevos avances para tratar la enfermedad de
-                  Alzheimer
+                  Alzheimer.
                 </Card.Text>
                 <div className="d-grid gap-2">
                   <Button
@@ -354,7 +354,7 @@ export const Home = () => {
                   <h2 style={{ textAlign: "center" }}>Mis Alertas</h2>
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  Obten las notificaciones oportunas de seguimiento del
+                  Obtén las notificaciones oportunas de seguimiento del
                   tratamiento.
                 </Card.Text>
                 <div className="d-grid gap-2">
@@ -393,7 +393,7 @@ export const Home = () => {
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   Aprenda acerca de las causas, los síntomas y fases del
-                  Alzheimer asi como los avances que se han obtenido.
+                  Alzheimer así como los avances que se han obtenido.
                 </Card.Text>
                 <div className="d-grid gap-2">
                   <Link
@@ -462,7 +462,7 @@ export const Home = () => {
                   <h2 style={{ textAlign: "center" }}>Mi Coach</h2>
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  Interactua con un Health Coach y recibe un acompañamiento
+                  Interactúa con un Health Coach y recibe un acompañamiento
                   online en tu proceso de salud geográfica.
                 </Card.Text>
                 <div className="d-grid gap-2">
