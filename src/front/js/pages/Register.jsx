@@ -1,7 +1,8 @@
 import React, { useContext, useState } from "react";
 import styles from "./Register.module.css";
 import { Context } from "../store/appContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 const Register = () => {
   const [singIn, setSingIn] = useState({ user: "", password: "", email: "" });
@@ -9,18 +10,22 @@ const Register = () => {
     setSingIn({ ...singIn, [event.target.name]: event.target.value });
   };
   const navigate = useNavigate();
-
   const { store, actions } = useContext(Context);
+  const params = useParams()
 
   const handleLogin = async (data) => {
     // esta funcion registra usuario
-    const result = await actions.signUp(data);
+    const result = await actions.signUp(data, params.naturaleza);
     if (result) {
-      navigate("/choose");
+      navigate("/home");
     } else {
       alert("El usuario no puede ser creado. Revise e intenté de nuevo");
     }
   };
+
+  useEffect(() => {
+    console.log(params.naturaleza)
+  },[])
 
   return (
     <>

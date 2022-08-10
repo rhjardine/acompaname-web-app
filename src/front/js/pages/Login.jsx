@@ -16,7 +16,7 @@ const Login = () => {
     // esta funcion registra usuario fetch (intento)
     const result = await actions.logIn(data);
     if (result) {
-      navigate("/choose");
+      navigate("/home");
     } else {
       alert("no se puedo iniciar sesión");
     }

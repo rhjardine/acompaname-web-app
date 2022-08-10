@@ -1,463 +1,169 @@
 import React from "react";
+import Accordion from "react-bootstrap/Accordion";
+
 
 const Tratamientos = () => {
   return (
-    <>
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div
-              className="accordion accordion-flush"
-              id="accordionFlushExample"
-            >
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="flush-headingOne">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
-                  >
-                    <h4>
-                      PRIMERA LINEA DE TRATAMIENTOS CONTRA EL MAL DEL ALZHEIMER
-                    </h4>
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseOne"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div className="accordion-body">
-                    <h2>
-                      {" "}
-                      <u>¿Qué es Alzheimer? </u>
-                    </h2>{" "}
-                    La enfermedad de Alzheimer es un trastorno cerebral que
-                    destruye lentamente la memoria, la capacidad de pensar y,
-                    con el tiempo, la habilidad de llevar a cabo hasta las
-                    tareas más sencillas.
-                    <br></br>
-                    <br></br>
-                    <h2>
-                      {" "}
-                      <u>Etapas</u>
-                    </h2>
-                    <br></br>
-                    <h3>Etapa temprana:</h3> La persona puede desenvolverse de
-                    forma independiente. Es posible que pueda conducir, trabajar
-                    y participar de actividades sociales. Pero, puede sentir que
-                    tiene episodios de pérdida de memoria como olvidarse
-                    palabras familiares o la ubicación de objetos cotidianos.
-                    <br></br>
-                    <br></br>
-                    <h3>Etapa media:</h3> Es la fase más prolongada, puede durar
-                    muchos años. Además de los síntomas anteriores puede
-                    presentar desorientación, confundir palabras, cambios en su
-                    temperamento como enojo, frustración y actúa de forma
-                    inesperada. También ya deja de hacer ciertas tareas
-                    cotidianas debido al daño de las células nerviosas del
-                    cerebro.
-                    <br></br>
-                    <br></br>
-                    <h3>Etapa final:</h3> Las personas pierden la capacidad de
-                    responder a su entorno, de llevar adelante una conversación
-                    y de controlar los movimientos. A medida que la memoria y
-                    las habilidades cognitivas empeoran, es posible que ocurran
-                    cambios significativos en la personalidad. Los pacientes
-                    requieren de ayuda en su totalidad
-                    <br></br>
-                    <br></br>
-                    <h2>
-                      {" "}
-                      <u>¿Cómo cuidarme?</u>
-                    </h2>
-                    <br></br>
-                    Con ayuda de su familiar o cuidador deben hacer diversos
-                    planes que le permita mantener estimulada la parte
-                    cognitiva. Estas son algunas cosas que usted puede hacer:
-                    <br></br>
-                    <br></br>
-                    <ul>
-                      <li>
-                        Haga actividades que concuerde con algo que, siendo
-                        paciente con Alzheimer, puede hacer, ejemplo: tareas
-                        domésticas, jugar memoria, pintar, ordenar, visitar
-                        familiares y recordar momentos con fotografías.
-                      </li>
-                      <br></br>
-                      <li>
-                        Seleccione actividades que puedan ser divertidas tanto
-                        para usted como paciente y su familiar o cuidador.
-                      </li>
-                      <br></br>
-                      <li>Dejarse siempre ayudar.</li>
-                      <br></br>
-                      <li>Evite frustrarse, téngase paciencia.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="flush-headingTwo">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseTwo"
-                  >
-                    <h4>CUIDADORES</h4>
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseTwo"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div className="accordion-body">
-                    <h2>
-                      {" "}
-                      <u>Pasos tras el diagnóstico</u>
-                    </h2>
-                    <br></br>
-                    Un ser querido con alzheimer necesitará apoyo en los
-                    diferentes ámbitos de su vida tras el diagnóstico, por lo
-                    que debe primeramente ser empático y documentarse sobre la
-                    enfermedad para saber cómo su familiar percibirá de ahora en
-                    adelante su mundo con demencia.
-                    <br></br>
-                    <br></br>
-                    Después de ello tome en cuenta lo siguiente:
-                    <br></br>
-                    <br></br>
-                    <ul>
-                      <li>Asumir nuevas responsabilidades.</li>
-                      <br></br>
-                      <li>
-                        Prevenir y siempre estar atento a posibles retos y
-                        problemas.
-                      </li>
-                      <br></br>
-                      <li>
-                        Promueva actividades que sean estimulantes y que pueda
-                        disfrutar su familiar con alzhéimer.
-                      </li>
-                      <br></br>
-                      <li>
-                        Tener personas y objetos comunes alrededor. Puede ser
-                        útil tener álbumes de fotos familiares.
-                      </li>
-                      <br></br>
-                      <li>
-                        Brindar recordatorios, notas, listas de tareas
-                        rutinarias o instrucciones para las actividades diarias.
-                      </li>
-                      <br></br>
-                      <li>Ceñirse a un horario de actividades simple.</li>
-                      <br></br>
-                      <li>
-                        Hablar con su familiar de cualquier tema que sean
-                        eventos actuales.
-                      </li>
-                      <br></br>
-                      <li>
-                        Tener siempre los números de emergencia guardados.
-                      </li>
-                      <br></br>
-                      <li>
-                        Incrementar la seguridad en la casa, para evitar
-                        accidentes.
-                      </li>
-                      <br></br>
-                      <li>
-                        Apoyo médico, de otros familiares, conocidos o vecinos.
-                        También apoyarse de ONG’s e instituciones o cuidadores
-                        especializados en la materia.
-                      </li>
-                    </ul>
-                    <br></br>
-                    <h2>
-                      {" "}
-                      <u>Actuar en cada Etapa</u>
-                    </h2>
-                    <br></br>
-                    <h3>Etapa temprana:</h3>
-                    <br></br>
-                    El objetivo es que mantenga el bienestar físico, la salud y
-                    tranquilidad.
-                    <br></br>
-                    <br></br>
-                    <ul>
-                      <li>
-                        Potenciar su independencia: que haga por sí mismo cuanto
-                        le sea posible para que así no olvide sus rutinas, se
-                        mantenga útil, autónomo y no decaiga su autoestima.
-                      </li>
-                      <br></br>
-                      <li>
-                        Ayudar al paciente a planificar: sea actividades que
-                        puede ayudar a mantener activa la parte cognitiva.
-                      </li>
-                      <br></br>
-                      <li>Prevenir cualquier accidente.</li>
-                    </ul>
-                    <br></br>
-                    <h3>Etapa media:</h3>
-                    <br></br>
-                    Esta fase supone una pérdida progresiva de su autonomía, la
-                    familia debe informarse de lugares que brinden apoyo.
-                    <br></br>
-                    <br></br>
-                    <ul>
-                      <li>
-                        Formar equipos familiares: que puedan ayudar al paciente
-                        porque y se turnen en sus cuidados, pues para una
-                        persona agota física y psicológicamente.
-                      </li>
-                      <br></br>
-                      <li>
-                        Buscar centros de ayuda o cuidadores: que les permitan
-                        cuidar al paciente por algunas horas.
-                      </li>
-                      <br></br>
-                      <li>
-                        Centros de estimulación cognitiva: buscar lugares donde
-                        el paciente pueda hacer ejercicio físico y mental.
-                      </li>
-                    </ul>
-                    <br></br>
-                    <h3>Etapa final:</h3>
-                    <br></br>
-                    Es la fase más complicada y a su vez más retadora tanto para
-                    el paciente como para el familiar, por lo que ambas partes
-                    requieren apoyo de especialistas.
-                    <br></br>
-                    <br></br>
-                    <ul>
-                      <li>
-                        Apoyarse en familia: se deben turnar con los cuidados
-                        del paciente, ya que requieren de más atención. También
-                        establecer planes de emergencia.
-                      </li>
-                      <br></br>
-                      <li>
-                        Buscar apoyo psicológico: para familiares y cuidadores
-                        porque la enfermedad desgasta mentalmente y puede
-                        presentar síndrome del cuidador principal.
-                      </li>
-                      <br></br>
-                      <li>
-                        Buscar apoyo médico: no solo para el paciente sino
-                        también para familiares porque agota físicamente para
-                        ellos.
-                      </li>
-                    </ul>
-                    <br></br>
-                    <h2>
-                      {" "}
-                      <u>Síndrome del cuidador</u>
-                    </h2>
-                    <br></br>
-                    El síndrome del cuidador es un conjunto de alteraciones
-                    físicas, psíquicas y sociales que suele experimentar el
-                    cuidador principal con el paso del tiempo. Estas
-                    alteraciones afectan a todos los ámbitos de su vida familiar
-                    y personal. Su sistema inmune puede verse afectado, ya que
-                    le baja las defensas y es propenso a tener enfermedades
-                    infecciosas como gripes, laringitis, dolores de cabeza etc…
-                    También se agotan mentalmente y pueden presentar mucha
-                    fatiga, enfado, frustración, tristeza, ansiedad entre otros.
-                    Y, por supuesto, también puede llegar a aislarse, dejar de
-                    hacer vida social y sus rutinas. Entonces, es necesario
-                    detectar estas pequeñas alertas del síndrome del cuidador y
-                    hablar del problema, buscar apoyo de otros y de psicólogos.
-                  </div>
-                </div>
-              </div>
 
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="flush-headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseThree"
+      <div style={{ backgroundColor: "#dde0ab" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-12" style={{ margin: "20px" }}>
+              <Accordion>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    <h4>AVANCES EN LA CURA DEL ALZHEIMER</h4>
+                  </Accordion.Header>
+                  <Accordion.Body
+                    style={{ backgroundColor: "#73b1c1", borderRadius: "20px" }}
                   >
-                    <h4>RECURSOS EN LA RED</h4>
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div className="accordion-body">
-                    <h2>
-                      {" "}
-                      <u>Mira las últimas publicaciones sobre alzheimer:</u>
-                    </h2>
-                    <br></br>
-                    <h6>
-                      Identificadas variantes en APOE que reducen riesgo de
-                      desarrollar Alzheimer{" "}
-                      <a
-                        href="https://genotipia.com/genetica_medica_news/apoe4-alzheimer-2/"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
-                    <br></br>
-                    <h6>
-                      Mejora el mapa genómico de la enfermedad de Alzheimer{" "}
-                      <a
-                        href="https://genotipia.com/genetica_medica_news/mejora-el-mapa-genomico-alzheimer/"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
-                    <br></br>
-                    <h6>
-                      Descubren una proteína que protege al cerebro de la
-                      enfermedad de Alzheimer{" "}
-                      <a
-                        href="https://genotipia.com/genetica_medica_news/proteina-protege-alzheimer/"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
-                    <br></br>
-                    <br></br>
-                    <h2>
-                      {" "}
-                      <u>Manuales sobre alzhéimer:</u>
-                    </h2>
-                    <br></br>
-                    <h6>
-                      Guía para Familiares de Enfermos de Alzheimer:“Querer
-                      cuidar, saber hacerlo”{" "}
-                      <a
-                        href="https://fiapam.org/wp-content/uploads/2013/12/GuiaAlzheimer.pdf"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
-                    <br></br>
-                    <h6>
-                      Manual para el cuidador de pacientes con demencia{" "}
-                      <a
-                        href="https://www.imserso.es/InterPresent1/groups/imserso/documents/binario/03_manual_pacientesdemencia.pdf"
-                        target="_blank"
-                      >
-                        (Hagaclic aquí)
-                      </a>
-                    </h6>
-                    <br></br>
-                    <h6>
-                      La Enfermedad de Alzheimer: Manual del cuidador{" "}
-                      <a
-                        href="https://www.snpv.org/contenidos/files/snpv_enlaces/0003.pdf"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
-                    <br></br>
-                    <br></br>
-                    <h2>
-                      {" "}
-                      <u>Películas, documentales y series:</u>
-                    </h2>
-                    <br></br>
-                    <h6>
-                      Piedad. Documental sobre el alzhéimer. Por Otto Roca.
-                    </h6>
-                    <br></br>
-                    <h6>
-                      Still Alice. Película sobre la vida de una profesora tras
-                      ser diagnosticada con alzheimer. Por Richard Glatzer, Wash
-                      Westmoreland.
-                    </h6>
-                    <br></br>
-                    <h6>
-                      Bicicleta, cuchara y manzana. Documental sobre la vida del
-                      político catalán, Pasqual Maragall, y su enfermedad
-                      alzhéimer. Por Carles Bosch.
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="flush-headingFour">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseFour"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseFour"
-                >
-                  <h4>RUTINAS DE EJERCICIOS</h4>
-                </button>
-              </h2>
-              <div
-                id="flush-collapseFour"
-                className="accordion-collapse collapse"
-                aria-labelledby="flush-headingFour"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div className="accordion-body">
-                  <h6>
-                    Ejercicios para personas con alzheimer en etapa inicial{" "}
-                    <a
-                      href="https://www.youtube.com/watch?v=VBZCRtfCOoE"
-                      target="_blank"
+                    <div
+                      style={{ backgroundColor: "#feffdf", borderRadius: "20px" }}
                     >
-                      (Haga clic aquí)
-                    </a>
-                  </h6>
-                  <br></br>
-                  <h6>
-                    Ejercicios para mejorar el equilibrio y marcha autónoma{" "}
-                    <a
-                      href="https://www.youtube.com/watch?v=Ta3O86qZrms"
-                      target="_blank"
+                      <h2>
+                        {" "}
+                        <u>Información subministrada por Cano Health</u>
+                      </h2>{" "}
+                      Se estima que casi 5.8 millones de Estadounidenses viven con la enfermedad de alzheimer (AD). La mayoría de esas personas son mayores de 65 años. Los expertos prevén que este número se duplique cada 5 a 10 años, y de aquí al 2050 habrán cerca de 14 millones de personas con el trastorno. Todos los tratamientos actuales para la AD son solo para síntomas leves, incluidos problemas con el razonamiento y el pensamiento, pero no todas las personas responden a esos medicamentos. Además, estos agentes también tienen efectos adversos que no siempre son tolerables. Ninguno de los tratamientos disponibles actualmente ha demostrado retrasar o prevenir la progresión de la enfermedad. Pero en el horizonte, nuevos estudios están iluminando el camino para mayor ayuda en el futuro.
+                      <br></br>
+                      <br></br>
+                      A medida que las neuronas cerebrales mueren, los síntomas empeoran y la mayoría de las personas con AD requieren admisión en centros de atención a largo plazo a medida que se vuelven inmanejables en casa. Durante las últimas tres décadas, los investigadores han tratado de encontrar tratamientos que puedan retrasar o prevenir la AD. Con una comprensión cada vez mayor de cómo la AD afecta a las neuronas en el cerebro, finalmente ha habido un avance de la cura para el alzheimer en 2022. La mayoría de las investigaciones se han enfocado en las placas en el cerebro de los individuos con AD. Esas placas aparecen antes de que se desarrollen los síntomas y si se puede encontrar una manera de prevenir la acumulación de placas, se puede evitar potencialmente el desarrollo de los síntomas.
+                      <br></br>
+                      <br></br>
+                      <h2>
+                        {" "}
+                        <u>Los Nuevos Tratamientos para la AD</u>
+                      </h2>{" "}
+                      <br></br>
+                      Los estudios novedosos sobre la cura y los tratamientos potenciales del alzheimer han mostrado algunos resultados prometedores.
+                      <br></br>
+                      <br></br>
+                      <u>Disolución de las placas:</u> La mayor parte del enfoque actual en el manejo de la AD se ha dirigido a las placas de proteínas conocidas como amiloide. Esas placas son una característica clásica del trastorno y a menudo se depositan temprano en el cerebro. Las personas que desarrollan esas placas en el cerebro son más propensas a desarrollar síntomas de AD que las personas sin placas. Por lo tanto, se han desarrollado varios fármacos (anticuerpos monoclonales) que previenen la formación o agrupación de esas placas amiloides. Los anticuerpos monoclonales son muy similares a los anticuerpos naturales en la circulación sanguínea, pero tienen un solo objetivo: beta amiloide. Desafortunadamente, el amiloide no se encuentra en todos los pacientes con AD y se desconoce por qué ocurre eso. Se cree que cerca del 30% a 35% de los pacientes con AD con síntomas leves a moderados pueden no tener amiloide cerebral, y por lo tanto no pueden beneficiarse de ese tratamiento.
+                      <br></br>
+                      <br></br>
+                      <u>Aducanumab:</u> el año pasado, la Administración de Alimentos y Medicamentos de los Estados Unidos aprobó Aducanumab, que se conoce como anticuerpo monoclonal, para el tratamiento de casos selectos de AD leve. Este es el único fármaco aprobado en los Estados Unidos para el tratamiento de las placas amiloides en el cerebro. Una vez que se eliminan las placas, las células cerebrales dejan de morir y la memoria, el pensamiento, la función y el comportamiento del paciente dejan de empeorar. Sin embargo, todavía hay debate sobre si el medicamento realmente funciona. Si bien varios ensayos pequeños han demostrado que el fármaco no solo previene la agregación de amiloide, sino que también disminuye los síntomas, otros ensayos clínicos no han demostrado ningún beneficio. Además, aún no existen datos a largo plazo sobre ese agente y si puede prevenir la demencia. Sin embargo, existe la esperanza de un avance decisivo en la cura para alzheimer en 2022.
+                      <br></br>
+                      <br></br>
+                      Actualmente, Aducanumab solo está aprobado para su uso en pacientes seleccionados con deterioro cognitivo leve o enfermedad de alzheimer temprana. Antes de que se pueda administrar el tratamiento, todas las personas con AD deben someterse a una exploración por TEP para determinar si tienen placas amiloides.
+                      <br></br>
+                      <br></br>
+                      Varios otros anticuerpos monoclonales también han sido desarrollados (Gantenerumab, Lecanemab y Donanemab) por diferentes fabricantes de fármacos y también se dirigen al amiloide en el cerebro. Todos esos agentes se están evaluando actualmente en ensayos clínicos.
+                      <br></br>
+                      <br></br>
+                    
+                      
+                    </div>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>
+                    <h4>¿CÓMO SE ADMINISTRA ADUCANUMAB?</h4>
+                  </Accordion.Header>
+                  <Accordion.Body
+                    style={{ backgroundColor: "#73b1c1", borderRadius: "20px" }}
+                  >
+                    <div
+                      className="accordion-body"
+                      style={{ backgroundColor: "#feffdf", borderRadius: "20px" }}
                     >
-                      (Haga clic aquí)
-                    </a>
-                  </h6>
-                  <br></br>
-                  <h6>
-                    Ejercicio de fisioterapia para personas con alzheimer{" "}
-                    <a
-                      href="https://www.youtube.com/watch?v=tewMao6oWik"
-                      target="_blank"
+                      <br></br>
+                      Para tomar el medicamento, necesita una infusión intravenosa cada cuatro semanas por el resto de su vida. Esto significa ir a un hospital o una clínica donde se inserta un tubo intravenoso y se infunde el anticuerpo monoclonal lentamente durante varias horas. El anticuerpo monoclonal Gantenerumab se puede administrar debajo de la piel, y uno puede administrar el fármaco en casa; sin embargo, esa técnica requiere cierta habilidad y herramientas.
+                      <br></br>
+                      <ul>
+                        <li>Hinchazón cerebral que puede causar dolores de cabeza, cambios en el estado mental, vómitos y dificultad para caminar.</li>
+                        <br></br>
+                        <li>
+                        Caídas. 
+                        </li>
+                        <br></br>
+                        <li>
+                        Diarreas.
+                        </li>
+                        <br></br>
+                        <li>
+                        Confusión.
+                        </li>
+                      </ul>
+                      
+                      Todos los pacientes que reciben Aducanumab deben ser monitoreados de cerca por un equipo de médicos. Si se desarrollan estos efectos secundarios, el medicamento debe suspenderse inmediatamente.
+                      <br></br>
+                      <br></br>
+                      Por el momento, se están llevando a cabo más ensayos clínicos para determinar sus efectos secundarios a largo plazo. Algunas aseguradoras han rechazado la cobertura de Aducanumab y solo unos pocos centros en los EE.UU. ofrecen esa terapia.
+                    </div>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="3">
+                  <Accordion.Header>
+                    <h4>OTROS TRATAMIENTOS NOVEDOSOS PARA EL ALZHEIMER</h4>
+                  </Accordion.Header>
+                  <Accordion.Body
+                    style={{ backgroundColor: "#73b1c1", borderRadius: "20px" }}
+                  >
+                    <div
+                      className="accordion-body"
+                      style={{ backgroundColor: "#feffdf", borderRadius: "20px" }}
                     >
-                      (Haga clic aquí)
-                    </a>
-                  </h6>
-                </div>
-              </div>
+                      <ul>
+                        <li>Prevenir la destrucción de las neuronas. Otros investigadores se han enfocado en el tratamiento para la AD que previene la destrucción de las neuronas importantes. El anticuerpo monoclonal saracatinib ha demostrado en estudios en animales que revierte la pérdida de memoria y reanuda la función de las neuronas. El fármaco se está evaluando actualmente en un pequeño ensayo clínico.</li>
+                        <br></br>
+                        <li>
+                        Prevenir enredos: otros investigadores están buscando fármacos que puedan prevenir la formación de enredos en el cerebro de individuos con AD. Se ha demostrado que una proteína llamada tau forma enredos en pacientes con AD y esto se ha relacionado con la demencia y los problemas de comportamiento. Actualmente, los inhibidores de tau y las vacunas de tau se están evaluando en ensayos clínicos. 
+                        </li>
+                        <br></br>
+                        <li>
+                        Disminución de la inflamación: muchos científicos creen que en la AD, el cerebro está en un estado de inflamación crónica de bajo nivel, que continúa dañando los nervios. Por lo tanto, se están desarrollando fármacos que tienen un efecto antiinflamatorio. Actualmente, el medicamento Sargramostim está en estudio para determinar si puede ayudar a los pacientes con AD.
+                        </li>
+                        <br></br>
+                      </ul>
+                      
+                    </div>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4">
+                  <Accordion.Header>
+                    <h4>SER CANDIDATO PARA ADUCANUMAB</h4>
+                  </Accordion.Header>
+                  <Accordion.Body
+                    style={{ backgroundColor: "#73b1c1", borderRadius: "20px" }}
+                  >
+                    <div
+                      className="accordion-body"
+                      style={{ backgroundColor: "#feffdf", borderRadius: "20px" }}
+                    >
+                      <h2>
+                        {" "}
+                        <u>Para ser elegible para el tratamiento con Aducanumab, uno debe cumplir con los siguientes criterios:</u>
+                      </h2>{" "}
+                      <ul>
+                        <li>Tener menos de 85 años.</li>
+                        <br></br>
+                        <li>
+                        Tener deterioro cognitivo leve confirmado. 
+                        </li>
+                        <br></br>
+                        <li>
+                        Someterse a una exploración por TEP para determinar la presencia de placas amiloides.
+                        </li>
+                        <br></br>
+                        <li>
+                        No tener antecedentes recientes de un accidente cerebrovascular o sangrado en el cerebro.
+                        </li>
+                        <br></br>
+                        <li>
+                        No tomar medicamento anticoagulante.
+                        </li>
+                        <br></br>
+                      </ul>
+                      
+                    </div>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </div>
           </div>
         </div>
       </div>
-    </>
-  );
+    );
 };
 
 export default Tratamientos;

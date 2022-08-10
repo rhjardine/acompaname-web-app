@@ -2,7 +2,7 @@
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
 from flask import Flask, request, jsonify, url_for, Blueprint
-from api.models import db, Paciente
+from api.models import db, Paciente, Cuidador
 from api.utils import generate_sitemap, APIException
 from flask_jwt_extended import create_access_token,  jwt_required, get_jwt_identity
 
@@ -51,15 +51,18 @@ def handle_users(naturaleza):
         email=body.get('email',None)
         password=body.get('password',None)
         new_paciente=Paciente(name,email,password)
+        token = create_access_token(identity=email)
         return jsonify({
-                "paciente":new_paciente.serialize()}), 201
+                "paciente":new_paciente.serialize(),
+                "token": token
+                }), 201
     else:
 
         body = request.json
         name=body.get('name',None)
         email=body.get('email',None)
         password=body.get('password',None)
-        new_cuidador=Cuidador(name,email,password)
+        new_cuidador= Cuidador(name,email,password)
         return jsonify({
                 "cuidador":new_cuidador.serialize()}), 201
     
@@ -118,9 +121,17 @@ def handleLogin():
         email= request.json.get("email", None)
         password= request.json.get("password", None)
         print(request.json)
-        user=User.query.filter_by(email=email, password=password).one_or_none()
+        user= Paciente.query.filter_by(email=email).one_or_none()
         if user is None:
-            return jsonify({"message": "algo salio mal, intenta de nuevo"}), 401
-        access_token= create_access_token(identity= user.id) 
-        return jsonify({"token": access_token}), 200
+            user = Cuidador.query.filter_by(email = email).one_or_none()
+            if user is None:
+                return jsonify("Usuario no existe"), 404
+            token = create_access_token(identity = user.id)
+            return jsonify({
+                "token": token
+            })
+        token = create_access_token(identity=user.id)
+        return jsonify({
+            "token": token
+        })
         

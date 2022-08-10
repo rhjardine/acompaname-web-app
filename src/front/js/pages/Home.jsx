@@ -73,14 +73,14 @@ export const Home = () => {
               <ListGroup defaultActiveKey="#link1">
                 <Stack gap={3}>
                   <Button
-                    href="./"
+                    href="/home"
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1", padding: "5px" }}
                   >
                     Home
                   </Button>{" "}
                   <Button
-                    href="/Register"
+                    href="/choose"
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
