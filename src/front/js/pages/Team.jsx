@@ -103,7 +103,7 @@ const Team = () => {
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   <p>
-                    Amante desde pequeno por las computadoras mi pacion crecio
+                    Amante desde pequeño por las computadoras mi pasión crecio
                     grandemente por la informatica, lo cual me llevo a estudiar
                     Ing en informatica en donde conoci el gran mundo de la
                     programacion, y gracias a 4geeks pude llevar el aprendizaje
@@ -134,12 +134,13 @@ const Team = () => {
                   <h2 style={{ textAlign: "center" }}>Richard Jardine</h2>
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  Soy un profesional de la Informática, con mas de 18 años de
-                  experiencia en el sistema financiero venezolano en el área de
-                  Gerencia de servicios al cliente, Mis intereses profesionales
-                  están orientados a efectuar una transición de carrera
-                  específicamente hacia el sector IT en los campos de desarrollo
-                  de proyectos ágiles y de transformación digital
+                  Soy un profesional de la informática y el Coaching, con mas de
+                  20 años de experiencia en el sistema financiero venezolano en
+                  el área de Gerencia de servicios al cliente. Mis intereses
+                  profesionales están orientados a efectuar una transición de
+                  carrera específicamente hacia el sector IT en los campos de
+                  desarrollo de proyectos ágiles, desarrollo web y
+                  transformación digital.
                 </Card.Text>
               </Card.Body>
             </Card>

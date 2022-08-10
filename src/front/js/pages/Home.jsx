@@ -101,7 +101,7 @@ export const Home = () => {
                     Acerca de
                   </Button>{" "}
                   <Button
-                    href="/Team"
+                    href="/login"
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
@@ -184,7 +184,7 @@ export const Home = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="./Image/carrusel_1.jpg"
+                  src="https://images.unsplash.com/photo-1572567981653-ce74f7356946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
                   alt="PRUEBA 3"
                   style={{ borderRadius: "20px" }}
                 />
@@ -277,7 +277,7 @@ export const Home = () => {
             >
               <Card.Img
                 variant="top"
-                src="https://cdn-icons.flaticon.com/png/512/5272/premium/5272677.png?token=exp=1659995454~hmac=0db4415b127fcee7c9e23be1dc2f04db"
+                src="https://cdn-icons.flaticon.com/png/512/2804/premium/2804895.png?token=exp=1660169972~hmac=034a1fada5e8c836ec6299166669f009"
                 style={{ borderRadius: "20px" }}
               />
               <Card.Body>
