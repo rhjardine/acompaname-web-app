@@ -101,7 +101,7 @@ export const Home = () => {
                     Preguntas
                   </Button>{" "}
                   <Button
-                    href="/login"
+                    href="/Team"
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
