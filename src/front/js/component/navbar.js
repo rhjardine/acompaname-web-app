@@ -18,6 +18,15 @@ export const Navbar = () => {
         ></img>
       </div>
       {/* <button
+=======
+      className="navbar navbar-expand-lg navbar-dark "
+      style={{ backgroundColor: "#36626a" }}
+    >
+      <a className="navbar-brand" href="#">
+        Navbar
+      </a>
+      <button
+>>>>>>> 94f5d10bae0890717f1e81d5a69377820e36e4f2
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
