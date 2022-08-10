@@ -2,6 +2,14 @@ import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
 import styles from "./Register.module.css";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Pedro from "./Imagenes/Pedro.png";
+import Robi from "./Imagenes/Robi.png";
+import Peres from "./Imagenes/Peres.png";
+import Richard from "./Imagenes/Richard.png";
 
 const Team = () => {
   const [singIn, setSingIn] = useState({ user: "", password: "" });
@@ -9,88 +17,137 @@ const Team = () => {
     setSingIn({ ...singIn, [event.target.name]: event.target.value });
   };
 
-  const { store, actions } = useContext(Context);
-  const navigate = useNavigate();
-
-  const handleLogin = async (data) => {
-    return (
-      <>
-        <div class="our-team-section">
-          <div class="member-container">
-            <h3 class="member-name">Robianna De La Parra</h3>
-            <p class="member-description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printe
-            </p>
-            <a href="" class="button">
-              ¡Conóceme!
-            </a>
-            <div class="socials-container">
-              <img src="Resources/FacebookBlanco.png" alt="" class="icon" />
-              <img src="Resources/InstagramBlanco.png" alt="" class="icon" />
-              <img src="Resources/LinkedinBlanco.png" alt="" class="icon" />
-              <img src="Resources/TwitterBlanco.png" alt="" class="icon" />
-            </div>
+  return (
+    <div style={{ backgroundColor: "#73b1c1" }}>
+      <Container style={{ backgroundColor: "#DDE0AB", borderRadius: "20px" }}>
+        <div className="row row-cols-4">
+          <div className="col " style={{ padding: "5px" }}>
+            <Card
+              style={{
+                width: "17rem",
+                height: "40rem",
+                padding: "20px",
+                margin: "40px 10px 40px 10px",
+                alignItems: "center",
+                backgroundColor: "#feffdf",
+                borderRadius: "20px",
+              }}
+            >
+              <Card.Img
+                variant="top"
+                src={Pedro}
+                style={{ borderRadius: "20px" }}
+              />
+              <Card.Body>
+                <Card.Title>
+                  <h3 style={{ textAlign: "center" }}>Pedro Maldonado</h3>
+                </Card.Title>
+                <Card.Text style={{ textAlign: "center" }}>
+                  Más de 20 años de experiencia como realizador audiovisual con
+                  experiencia en producción de eventos corporativos en vivo.
+                  Actualmente estudiando programación web..
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </div>
-
-          <div class="member-container">
-            <h3 class="member-name">José Perestrelo</h3>
-            <p class="member-description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printe
-            </p>
-            <a href="" class="button">
-              ¡Conóceme!
-            </a>
-            <div class="socials-container">
-              <img src="Resources/FacebookBlanco.png" alt="" class="icon" />
-              <img src="Resources/InstagramBlanco.png" alt="" class="icon" />
-              <img src="Resources/LinkedinBlanco.png" alt="" class="icon" />
-              <img src="Resources/TwitterBlanco.png" alt="" class="icon" />
-            </div>
+          <div className="col" style={{ padding: "5px" }}>
+            <Card
+              style={{
+                width: "17rem",
+                height: "45rem",
+                padding: "20px",
+                margin: "40px 10px 40px 10px",
+                backgroundColor: "#feffdf",
+                borderRadius: "20px",
+              }}
+            >
+              <Card.Img
+                variant="top"
+                src={Robi}
+                style={{ borderRadius: "20px", height: "280px" }}
+              />
+              <Card.Body>
+                <Card.Title>
+                  <h3 style={{ textAlign: "center" }}>Robianna De La Parra</h3>
+                </Card.Title>
+                <Card.Text style={{ textAlign: "center" }}>
+                  ¡Me gusta contar historias! Por eso escogí Periodismo como
+                  profesión y esta me ha permitido trabajar en el mundo digital
+                  para agencias de publicidad, televisión, radio, revistas y de
+                  manera autónoma, siempre llevando mi escritura creativa. Y,
+                  ahora, echando uno que otro código como estudiante en 4 Geeks
+                  Academy.
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </div>
-
-          <div class="member-container">
-            <h3 class="member-name">Pedro Maldonado</h3>
-            <p class="member-description">
-              Más de 20 años de experiencia como realizador audiovisual con
-              experiencia en producción de eventos corporativos en vivo.
-              Actualmente estudiando programación web.
-            </p>
-            <a href="" class="button">
-              ¡Conóceme!
-            </a>
-            <div class="socials-container">
-              <img src="Resources/FacebookBlanco.png" alt="" class="icon" />
-              <img src="Resources/InstagramBlanco.png" alt="" class="icon" />
-              <img src="Resources/LinkedinBlanco.png" alt="" class="icon" />
-              <img src="Resources/TwitterBlanco.png" alt="" class="icon" />
-            </div>
+          <div className="col" style={{ padding: "5px" }}>
+            <Card
+              style={{
+                width: "17rem",
+                height: "44rem",
+                padding: "20px",
+                margin: "40px 10px 40px 10px",
+                backgroundColor: "#feffdf",
+                borderRadius: "20px",
+              }}
+            >
+              <Card.Img
+                variant="top"
+                src={Peres}
+                style={{ borderRadius: "20px", height: "280px" }}
+              />
+              <Card.Body>
+                <Card.Title>
+                  <h2 style={{ textAlign: "center" }}>Jose Perestrelo</h2>
+                </Card.Title>
+                <Card.Text style={{ textAlign: "center" }}>
+                  <p>
+                    Amante desde pequeno por las computadoras mi pacion crecio
+                    grandemente por la informatica, lo cual me llevo a estudiar
+                    Ing en informatica en donde conoci el gran mundo de la
+                    programacion, y gracias a 4geeks pude llevar el aprendizaje
+                    al maximo!!{" "}
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </div>
-
-          <div class="member-container">
-            <h3 class="member-name">Richard Jardine</h3>
-            <p class="member-description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printe
-            </p>
-            <a href="" class="button">
-              ¡Conóceme!
-            </a>
-            <div class="socials-container">
-              <img src="Resources/FacebookBlanco.png" alt="" class="icon" />
-              <img src="Resources/InstagramBlanco.png" alt="" class="icon" />
-              <img src="Resources/LinkedinBlanco.png" alt="" class="icon" />
-              <img src="Resources/TwitterBlanco.png" alt="" class="icon" />
-            </div>
+          <div className="col" style={{ padding: "5px" }}>
+            <Card
+              style={{
+                width: "17rem",
+                height: "50rem",
+                padding: "20px",
+                margin: "40px 10px 40px 10px",
+                backgroundColor: "#feffdf",
+                borderRadius: "20px",
+              }}
+            >
+              <Card.Img
+                variant="top"
+                src={Richard}
+                style={{ borderRadius: "20px", height: "280px" }}
+              />
+              <Card.Body>
+                <Card.Title>
+                  <h2 style={{ textAlign: "center" }}>Richard Jardine</h2>
+                </Card.Title>
+                <Card.Text style={{ textAlign: "center" }}>
+                  Soy un profesional de la Informática, con mas de 18 años de
+                  experiencia en el sistema financiero venezolano en el área de
+                  Gerencia de servicios al cliente, Mis intereses profesionales
+                  están orientados a efectuar una transición de carrera
+                  específicamente hacia el sector IT en los campos de desarrollo
+                  de proyectos ágiles y de transformación digital
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </div>
         </div>
-      </>
-    );
-  };
+      </Container>
+    </div>
+  );
 };
 
 export default Team;
