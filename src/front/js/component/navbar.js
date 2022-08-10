@@ -1,13 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../pages/Imagenes/Logo_A.png";
 
 export const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      className="navbar navbar-expand-lg"
+      style={{ backgroundColor: "#36626a" }}
+    >
+      <div className="navbar-brand" href="#">
+        <img
+          className="imagen"
+          width="100px"
+          height="100px"
+          style={{ borderRadius: "50px" }}
+          src={logo}
+        ></img>
+      </div>
+      {/* <button
+=======
+      className="navbar navbar-expand-lg navbar-dark "
+      style={{ backgroundColor: "#36626a" }}
+    >
       <a className="navbar-brand" href="#">
         Navbar
       </a>
       <button
+>>>>>>> 94f5d10bae0890717f1e81d5a69377820e36e4f2
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -43,7 +62,7 @@ export const Navbar = () => {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </nav>
   );
 };
