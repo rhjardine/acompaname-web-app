@@ -47,7 +47,7 @@ const Choose = () => {
                 <button
                   type={"button"}
                   className="tarjeta btn btn-secondary w-100 my-4"
-                  onClick={() => navigate("/home")}
+                  onClick={() => navigate("/register/cuidador")}
                   // style={{ backgroundColor: "#1a2537" }}
                 >
                   Cuidador
@@ -55,7 +55,7 @@ const Choose = () => {
                 <button
                   type={"button"}
                   className="tarjeta btn btn-secondary w-100 my-4"
-                  // onClick={() => navigate(/)}
+                  onClick={() => navigate("/register/paciente")}
                   //style={{ backgroundColor: "#1a2537" }}
                 >
                   Paciente

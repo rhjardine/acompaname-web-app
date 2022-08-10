@@ -32,8 +32,16 @@ class Cuidador(db.Model):
     name = db.Column(db.String(50), unique=False, nullable=False)
     email = db.Column(db.String(50), unique=True, nullable=False)
     password = db.Column(db.String(50), unique=False, nullable = False)
-   
 
+    def __init__(self, name, email, password):
+
+        self.name=name
+        self.email=email
+        self.password=password
+
+        db.session.add(self)
+        db.session.commit()
+    
     def __repr__(self):
         return f'<Cuidador {self.email}>'
 
@@ -55,7 +63,14 @@ class Paciente(db.Model):
 #     blood = db.Column(db.String(50), nullable = False)
 #     biological_ages = db.relationship ("Age_Biological", backref = "paciente")
 
+    def __init__(self, name, email, password):
+        
+        self.name=name
+        self.email=email
+        self.password=password
 
+        db.session.add(self)
+        db.session.commit()
 
     def __repr__(self):
         return f'<Paciente {self.email}>'

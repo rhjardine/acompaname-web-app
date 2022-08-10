@@ -83,7 +83,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       logIn: async (requestBody) => {
         try {
-          const response = await fetch(`${process.env.BACKEND_URL}/api/token`, {
+          const response = await fetch(`${process.env.BACKEND_URL}/api/login`, {
             method: "POST",
             body: JSON.stringify({
               ...requestBody,
