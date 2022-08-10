@@ -98,7 +98,7 @@ export const Home = () => {
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
-                    Preguntas
+                    Acerca de
                   </Button>{" "}
                   <Button
                     href="/login"
@@ -184,7 +184,7 @@ export const Home = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="https://images.unsplash.com/photo-1572567981653-ce74f7356946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                  src="./Image/carrusel_1.jpg"
                   alt="PRUEBA 3"
                   style={{ borderRadius: "20px" }}
                 />
