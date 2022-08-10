@@ -10,86 +10,59 @@ const SoyCuidador = () => {
             <Accordion>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  <h4>CONOZCA MÁS</h4>
+                  <h4>AUTOCUIDADO</h4>
                 </Accordion.Header>
                 <Accordion.Body
-                  style={{ backgroundColor: "red", borderRadius: "20px" }}
+                  style={{ backgroundColor: "#73b1c1", borderRadius: "20px" }}
                 >
                   <div
                     style={{ backgroundColor: "#feffdf", borderRadius: "20px" }}
                   >
                     <h2>
                       {" "}
-                      <u>¿Qué es Alzheimer? </u>
+                      <u>¿Qué es el autocuidado? </u>
                     </h2>{" "}
-                    La enfermedad de Alzheimer es un trastorno cerebral que
-                    destruye lentamente la memoria, la capacidad de pensar y,
-                    con el tiempo, la habilidad de llevar a cabo hasta las
-                    tareas más sencillas.
+                    El autocuidado parte de la premisa de que se deben atender
+                    las propias necesidades: emocionales, físicas y sociales.
                     <br></br>
                     <br></br>
-                    <h2>
-                      {" "}
-                      <u>Etapas</u>
-                    </h2>
-                    <br></br>
-                    <h3>Etapa temprana:</h3> La persona puede desenvolverse de
-                    forma independiente. Es posible que pueda conducir, trabajar
-                    y participar de actividades sociales. Pero, puede sentir que
-                    tiene episodios de pérdida de memoria como olvidarse
-                    palabras familiares o la ubicación de objetos cotidianos.
+                    Las necesidades emocionales solo podrán ser atendidas
+                    adecuadamente cuando la persona que cuida sea capaz de
+                    identificarlas. Es importante saber poner nombre a lo que se
+                    siente y se experimenta para poder gestionarlo de forma
+                    saludable.
                     <br></br>
                     <br></br>
-                    <h3>Etapa media:</h3> Es la fase más prolongada, puede durar
-                    muchos años. Además de los síntomas anteriores puede
-                    presentar desorientación, confundir palabras, cambios en su
-                    temperamento como enojo, frustración y actúa de forma
-                    inesperada. También ya deja de hacer ciertas tareas
-                    cotidianas debido al daño de las células nerviosas del
-                    cerebro.
+                    Por otro lado, la salud física tiene un impacto crucial en
+                    el bienestar de las personas y, para mantenerla, quien cuida
+                    debe atenderse también esa esfera. Es fundamental que la
+                    persona cuidadora de un ser querido con alzheimer, pueda
+                    dedicarse un tiempo a sí misma para poder asegurar la
+                    realización de las revisiones médicas necesarias, el
+                    seguimiento de una nutrición adecuada, un descanso
+                    reparador, una actividad física regular...
+                    <br></br>
+                    Además, para la salud psicológica, es muy importante
+                    mantener aficiones y actividades de ocio y sociales que, o
+                    bien ya tenía antes del diagnóstico de la enfermedad de su
+                    familiar, o nuevas oportunidades que le puedan resultar
+                    atractivas en el momento actual. De hecho, este aspecto
+                    ayuda también a desarrollar un carácter resiliente.
                     <br></br>
                     <br></br>
-                    <h3>Etapa final:</h3> Las personas pierden la capacidad de
-                    responder a su entorno, de llevar adelante una conversación
-                    y de controlar los movimientos. A medida que la memoria y
-                    las habilidades cognitivas empeoran, es posible que ocurran
-                    cambios significativos en la personalidad. Los pacientes
-                    requieren de ayuda en su totalidad
+                    En síntesis, el bienestar global de la persona cuidadora
+                    influye en la calidad de las atenciones que le debe prestar
+                    a su ser querido dependiente y, para maximizarlo, es
+                    primordial que entienda que también debe cuidar de sí misma
+                    a diferentes niveles.
                     <br></br>
-                    <br></br>
-                    <h2>
-                      {" "}
-                      <u>¿Cómo cuidarme?</u>
-                    </h2>
-                    <br></br>
-                    Con ayuda de su familiar o cuidador deben hacer diversos
-                    planes que le permita mantener estimulada la parte
-                    cognitiva. Estas son algunas cosas que usted puede hacer:
-                    <br></br>
-                    <br></br>
-                    <ul>
-                      <li>
-                        Haga actividades que concuerde con algo que, siendo
-                        paciente con Alzheimer, puede hacer, ejemplo: tareas
-                        domésticas, jugar memoria, pintar, ordenar, visitar
-                        familiares y recordar momentos con fotografías.
-                      </li>
-                      <br></br>
-                      <li>
-                        Seleccione actividades que puedan ser divertidas tanto
-                        para usted como paciente y su familiar o cuidador.
-                      </li>
-                      <br></br>
-                      <li>Dejarse siempre ayudar.</li>
-                      <br></br>
-                      <li>Evite frustrarse, téngase paciencia.</li>
-                    </ul>
+                    
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
                 <Accordion.Header>
-                  <h4>CUIDADORES</h4>
+                  <h4>CUIDAR SU PROPIO CUERPO</h4>
                 </Accordion.Header>
                 <Accordion.Body
                   style={{ backgroundColor: "#73b1c1", borderRadius: "20px" }}
@@ -100,166 +73,40 @@ const SoyCuidador = () => {
                   >
                     <h2>
                       {" "}
-                      <u>Pasos tras el diagnóstico</u>
+                      <u>Los cuidadores de personas con Alzheimer deben de cuidar su propio cuerpo</u>
                     </h2>
                     <br></br>
-                    Un ser querido con alzheimer necesitará apoyo en los
-                    diferentes ámbitos de su vida tras el diagnóstico, por lo
-                    que debe primeramente ser empático y documentarse sobre la
-                    enfermedad para saber cómo su familiar percibirá de ahora en
-                    adelante su mundo con demencia.
+                    Hay que propiciar el descanso y liberarse de las tensiones del día a día o tratar de disminuirlas. Quien cuida debe cuidarse también físicamente para poder ocuparse mejor de su familiar y atender adecuadamente a las exigencias del día a día. Encontrarse bien físicamente le ayudará a afrontar situaciones difíciles o conflictivas, como posibles alteraciones de conducta  o la progresiva pérdida de autonomía de la persona afectada.
                     <br></br>
                     <br></br>
-                    Después de ello tome en cuenta lo siguiente:
+                    Algunos consejos para las personas cuidadoras pueden ser:
                     <br></br>
                     <br></br>
                     <ul>
-                      <li>Asumir nuevas responsabilidades.</li>
+                      <li>Dormir lo suficiente. La falta de sueño puede provocar déficit de atención, irritabilidad, somnolencia persistente... Y disminuir la paciencia necesaria que requiere la atención de una persona con alzheimer.</li>
                       <br></br>
                       <li>
-                        Prevenir y siempre estar atento a posibles retos y
-                        problemas.
+                      Hacer ejercicio con regularidad. La actividad física es una buena aliada para combatir los síntomas depresivos y ansiosos, así como para rebajar tensiones. 
                       </li>
                       <br></br>
                       <li>
-                        Promueva actividades que sean estimulantes y que pueda
-                        disfrutar su familiar con alzhéimer.
+                      Practicar la relajación. Exponerse a altos niveles de estrés de forma continuada tiene importantes consecuencias sobre la salud. Realizar regularmente ejercicios de relajación y de respiración pueden ser de gran ayuda para controlar, gestionar y reducir la ansiedad y sus consecuencias.
                       </li>
                       <br></br>
                       <li>
-                        Tener personas y objetos comunes alrededor. Puede ser
-                        útil tener álbumes de fotos familiares.
+                      Ante la persistencia de cualquier síntoma físico (pérdida de energía, alteraciones de sueño, falta de apetito, dolores, etcétera) es importante consultar con un profesional de la salud que pueda evaluar la situación y, si fuera el caso, dar las recomendaciones pertinentes o prescribir el tratamiento más adecuado.
                       </li>
                       <br></br>
-                      <li>
-                        Brindar recordatorios, notas, listas de tareas
-                        rutinarias o instrucciones para las actividades diarias.
-                      </li>
-                      <br></br>
-                      <li>Ceñirse a un horario de actividades simple.</li>
-                      <br></br>
-                      <li>
-                        Hablar con su familiar de cualquier tema que sean
-                        eventos actuales.
-                      </li>
-                      <br></br>
-                      <li>
-                        Tener siempre los números de emergencia guardados.
-                      </li>
-                      <br></br>
-                      <li>
-                        Incrementar la seguridad en la casa, para evitar
-                        accidentes.
-                      </li>
-                      <br></br>
-                      <li>
-                        Apoyo médico, de otros familiares, conocidos o vecinos.
-                        También apoyarse de ONG’s e instituciones o cuidadores
-                        especializados en la materia.
-                      </li>
+                      
                     </ul>
                     <br></br>
-                    <h2>
-                      {" "}
-                      <u>Actuar en cada Etapa</u>
-                    </h2>
-                    <br></br>
-                    <h3>Etapa temprana:</h3>
-                    <br></br>
-                    El objetivo es que mantenga el bienestar físico, la salud y
-                    tranquilidad.
-                    <br></br>
-                    <br></br>
-                    <ul>
-                      <li>
-                        Potenciar su independencia: que haga por sí mismo cuanto
-                        le sea posible para que así no olvide sus rutinas, se
-                        mantenga útil, autónomo y no decaiga su autoestima.
-                      </li>
-                      <br></br>
-                      <li>
-                        Ayudar al paciente a planificar: sea actividades que
-                        puede ayudar a mantener activa la parte cognitiva.
-                      </li>
-                      <br></br>
-                      <li>Prevenir cualquier accidente.</li>
-                    </ul>
-                    <br></br>
-                    <h3>Etapa media:</h3>
-                    <br></br>
-                    Esta fase supone una pérdida progresiva de su autonomía, la
-                    familia debe informarse de lugares que brinden apoyo.
-                    <br></br>
-                    <br></br>
-                    <ul>
-                      <li>
-                        Formar equipos familiares: que puedan ayudar al paciente
-                        porque y se turnen en sus cuidados, pues para una
-                        persona agota física y psicológicamente.
-                      </li>
-                      <br></br>
-                      <li>
-                        Buscar centros de ayuda o cuidadores: que les permitan
-                        cuidar al paciente por algunas horas.
-                      </li>
-                      <br></br>
-                      <li>
-                        Centros de estimulación cognitiva: buscar lugares donde
-                        el paciente pueda hacer ejercicio físico y mental.
-                      </li>
-                    </ul>
-                    <br></br>
-                    <h3>Etapa final:</h3>
-                    <br></br>
-                    Es la fase más complicada y a su vez más retadora tanto para
-                    el paciente como para el familiar, por lo que ambas partes
-                    requieren apoyo de especialistas.
-                    <br></br>
-                    <br></br>
-                    <ul>
-                      <li>
-                        Apoyarse en familia: se deben turnar con los cuidados
-                        del paciente, ya que requieren de más atención. También
-                        establecer planes de emergencia.
-                      </li>
-                      <br></br>
-                      <li>
-                        Buscar apoyo psicológico: para familiares y cuidadores
-                        porque la enfermedad desgasta mentalmente y puede
-                        presentar síndrome del cuidador principal.
-                      </li>
-                      <br></br>
-                      <li>
-                        Buscar apoyo médico: no solo para el paciente sino
-                        también para familiares porque agota físicamente para
-                        ellos.
-                      </li>
-                    </ul>
-                    <br></br>
-                    <h2>
-                      {" "}
-                      <u>Síndrome del cuidador</u>
-                    </h2>
-                    <br></br>
-                    El síndrome del cuidador es un conjunto de alteraciones
-                    físicas, psíquicas y sociales que suele experimentar el
-                    cuidador principal con el paso del tiempo. Estas
-                    alteraciones afectan a todos los ámbitos de su vida familiar
-                    y personal. Su sistema inmune puede verse afectado, ya que
-                    le baja las defensas y es propenso a tener enfermedades
-                    infecciosas como gripes, laringitis, dolores de cabeza etc…
-                    También se agotan mentalmente y pueden presentar mucha
-                    fatiga, enfado, frustración, tristeza, ansiedad entre otros.
-                    Y, por supuesto, también puede llegar a aislarse, dejar de
-                    hacer vida social y sus rutinas. Entonces, es necesario
-                    detectar estas pequeñas alertas del síndrome del cuidador y
-                    hablar del problema, buscar apoyo de otros y de psicólogos.
+                    
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3">
                 <Accordion.Header>
-                  <h4>RECURSOS EN LA RED</h4>
+                  <h4>CUIDAR LAS EMOCIONES</h4>
                 </Accordion.Header>
                 <Accordion.Body
                   style={{ backgroundColor: "#73b1c1", borderRadius: "20px" }}
@@ -270,105 +117,29 @@ const SoyCuidador = () => {
                   >
                     <h2>
                       {" "}
-                      <u>Mira las últimas publicaciones sobre alzheimer:</u>
+                      <u>Reconocer y aceptar los sentimientos</u>
                     </h2>
                     <br></br>
-                    <h6>
-                      Identificadas variantes en APOE que reducen riesgo de
-                      desarrollar Alzheimer{" "}
-                      <a
-                        href="https://genotipia.com/genetica_medica_news/apoe4-alzheimer-2/"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
-                    <br></br>
-                    <h6>
-                      Mejora el mapa genómico de la enfermedad de Alzheimer{" "}
-                      <a
-                        href="https://genotipia.com/genetica_medica_news/mejora-el-mapa-genomico-alzheimer/"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
-                    <br></br>
-                    <h6>
-                      Descubren una proteína que protege al cerebro de la
-                      enfermedad de Alzheimer{" "}
-                      <a
-                        href="https://genotipia.com/genetica_medica_news/proteina-protege-alzheimer/"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
+                    Es muy importante reconocer y aceptar los propios sentimientos sin juzgarlos. Profundizar en el autoconocimiento permite identificar emociones y reconocer las propias necesidades. Es importante no rechazar o “prohibirse” ningún sentimiento. Es más, la aceptación  de los sentimientos negativos es clave para aprender a gestionarlos y lleva a vivir más intensamente los positivos.
                     <br></br>
                     <br></br>
-                    <h2>
-                      {" "}
-                      <u>Manuales sobre alzheimer:</u>
-                    </h2>
-                    <br></br>
-                    <h6>
-                      Guía para Familiares de Enfermos de Alzheimer:“Querer
-                      cuidar, saber hacerlo”{" "}
-                      <a
-                        href="https://fiapam.org/wp-content/uploads/2013/12/GuiaAlzheimer.pdf"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
-                    <br></br>
-                    <h6>
-                      Manual para el cuidador de pacientes con demencia{" "}
-                      <a
-                        href="https://www.imserso.es/InterPresent1/groups/imserso/documents/binario/03_manual_pacientesdemencia.pdf"
-                        target="_blank"
-                      >
-                        (Hagaclic aquí)
-                      </a>
-                    </h6>
-                    <br></br>
-                    <h6>
-                      La Enfermedad de Alzheimer: Manual del cuidador{" "}
-                      <a
-                        href="https://www.snpv.org/contenidos/files/snpv_enlaces/0003.pdf"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
+                    Las personas que cuidan pueden sentir angustia o tener pensamientos recurrentes que no pueden evitar. Muchas ideas que provocan angustia suelen generarse por la anticipación a posibles situaciones no deseables. Aprender a vivir el día a día, evitando el catastrofismo y la excesiva anticipación favorecerá una mayor gestión de esta sensación. No obstante, el hecho de planificar algunas cuestiones futuras, como informarse sobre la gestión de plaza en una residencia o buscar una persona que pueda ayudar en los cuidados del familiar,  favorece la sensación de control y seguridad.
                     <br></br>
                     <br></br>
-                    <h2>
-                      {" "}
-                      <u>Películas, documentales y series:</u>
-                    </h2>
+                    Debido a la variación y la imprevisibilidad de los síntomas en la evolución de la enfermedad, es fácil que el estado de ánimo del cuidador también fluctúe por el desconcierto o el agotamiento que ello le puede producir.
                     <br></br>
-                    <h6>
-                      Piedad. Documental sobre el alzhéimer. Por Otto Roca.
-                    </h6>
                     <br></br>
-                    <h6>
-                      Still Alice. Película sobre la vida de una profesora tras
-                      ser diagnosticada con alzheimer. Por Richard Glatzer, Wash
-                      Westmoreland.
-                    </h6>
+                    Así, quien cuida de una persona con alzheimer puede experimentar cambios de humor, irritabilidad o nerviosismo. Conocer la evolución de la enfermedad y comprender que esta puede desencadenar una gran diversidad de emociones y sensaciones en el cuidador será de ayuda para enfrentarse con más entereza a situaciones conflictivas.
                     <br></br>
-                    <h6>
-                      Bicicleta, cuchara y manzana. Documental sobre la vida del
-                      político catalán, Pasqual Maragall, y su enfermedad
-                      alzhéimer. Por Carles Bosch.
-                    </h6>
+                    <br></br>
+                    Además, poder expresar estos sentimientos y reconocer la necesidad de ayuda y la utilidad de recibirla, contribuirá a mantener y mejorar su bienestar.
+                    
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="4">
                 <Accordion.Header>
-                  <h4>RUTINAS DE EJERCICIOS</h4>
+                  <h4>PRESERVAR LA VIDA SOCIAL Y RELACIONES</h4>
                 </Accordion.Header>
                 <Accordion.Body
                   style={{ backgroundColor: "#73b1c1", borderRadius: "20px" }}
@@ -377,35 +148,23 @@ const SoyCuidador = () => {
                     className="accordion-body"
                     style={{ backgroundColor: "#feffdf", borderRadius: "20px" }}
                   >
-                    <h6>
-                      Ejercicios para personas con alzheimer en etapa inicial{" "}
-                      <a
-                        href="https://www.youtube.com/watch?v=VBZCRtfCOoE"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
+                    Quien cuida de una persona con alzheimer debe reorganizar su vida social, salir de casa, disfrutar de la compañía de otras personas, realizar actividades compartidas y recuperar el interés por aficiones o intereses con los que antes disfrutaba o encontrar nuevas oportunidades de ocio.
                     <br></br>
-                    <h6>
-                      Ejercicios para mejorar el equilibrio y marcha autónoma{" "}
-                      <a
-                        href="https://www.youtube.com/watch?v=Ta3O86qZrms"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
                     <br></br>
-                    <h6>
-                      Ejercicio de fisioterapia para personas con alzheimer{" "}
-                      <a
-                        href="https://www.youtube.com/watch?v=tewMao6oWik"
-                        target="_blank"
-                      >
-                        (Haga clic aquí)
-                      </a>
-                    </h6>
+                    Inmerso en la tarea de atender a su familiar, el cuidador puede tender a abandonar el autocuidado, aislarse, abandonar otras actividades o alejarse de sus amistades. Sin embargo, su capacidad, a pesar de su buena voluntad, tiene límites, como la de todo el mundo. Sobrepasarlos solo puede conllevar consecuencias no deseables a su bienestar y, probablemente, a su salud.
+                    <br></br>
+                    <br></br>
+                    La participación de otros familiares y/o allegados en el cuidado puede beneficiar tanto a cuidadores como a personas afectadas por la enfermedad, ya que contribuye a la creación o al fortalecimiento de ciertos vínculos y a mejorar la comunicación y la solidez de la estructura familiar.
+                    <br></br>
+                    <br></br>
+                    Buscar apoyo familiar y social ayudará a evitar el aislamiento del cuidador. Pedir ayuda no es síntoma de debilidad y aceptarla tiene una gran utilidad como herramienta terapéutica.
+                    <br></br>
+                    <br></br>
+                    La ayuda profesional y/o de otras personas que están pasando por una situación similar puede representar un cambio muy importante en el bienestar del cuidador. Las asociaciones de familiares ofrecen recursos de apoyo para cuidadores y otras entidades cuentan con grupos terapéuticos para cuidadores  de personas con alzheimer.
+                    <br></br>
+                    <br></br>
+                    Así, uno de los principales consejos para personas cuidadoras es el autocuidado, teniendo en cuenta su propio estado físico, emocional y social. Todo ello contribuirá a sentirse mejor, estar con mejor predisposición para afrontar los distintos momentos del día a día, a comunicarse mejor y a fortalecer la relación con otros miembros de la familia.
+                    
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
