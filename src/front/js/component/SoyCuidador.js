@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 
-const InfoUtilidades = () => {
+const SoyCuidador = () => {
   return (
     <div style={{ backgroundColor: "#dde0ab" }}>
       <div className="container">
@@ -13,7 +13,7 @@ const InfoUtilidades = () => {
                   <h4>CONOZCA MÁS</h4>
                 </Accordion.Header>
                 <Accordion.Body
-                  style={{ backgroundColor: "#73b1c1", borderRadius: "20px" }}
+                  style={{ backgroundColor: "red", borderRadius: "20px" }}
                 >
                   <div
                     style={{ backgroundColor: "#feffdf", borderRadius: "20px" }}
@@ -417,4 +417,4 @@ const InfoUtilidades = () => {
   );
 };
 
-export default InfoUtilidades;
+export default SoyCuidador;

@@ -231,6 +231,7 @@ export const Home = () => {
             <Card
               style={{
                 width: "17rem",
+                height: "31rem",
                 padding: "20px",
                 margin: "40px 10px 40px 10px",
                 alignItems: "center",
@@ -267,6 +268,7 @@ export const Home = () => {
             <Card
               style={{
                 width: "17rem",
+                height: "31rem",
                 padding: "20px",
                 margin: "40px 10px 40px 10px",
                 backgroundColor: "#feffdf",
@@ -287,13 +289,15 @@ export const Home = () => {
                   Alzheimer.
                 </Card.Text>
                 <div className="d-grid gap-2">
-                  <Button
+                  <Link
                     variant="light"
                     size="lg"
+                    className="btn btn-light"
+                    to={"/informacion/tratamientos"}
                     style={{ backgroundColor: "#73b1c1" }}
                   >
                     <h3>Accede</h3>
-                  </Button>
+                  </Link>
                 </div>
               </Card.Body>
             </Card>
@@ -302,6 +306,7 @@ export const Home = () => {
             <Card
               style={{
                 width: "17rem",
+                height: "31rem",
                 padding: "20px",
                 margin: "40px 10px 40px 10px",
                 backgroundColor: "#feffdf",
@@ -339,6 +344,7 @@ export const Home = () => {
             <Card
               style={{
                 width: "17rem",
+                height: "31rem",
                 padding: "20px",
                 margin: "40px 10px 40px 10px",
                 backgroundColor: "#feffdf",
@@ -377,6 +383,7 @@ export const Home = () => {
             <Card
               style={{
                 width: "17rem",
+                height: "31rem",
                 padding: "20px",
                 margin: "40px 10px 40px 10px",
                 backgroundColor: "#feffdf",
@@ -392,8 +399,8 @@ export const Home = () => {
                   <h2 style={{ textAlign: "center" }}>Utilidades</h2>
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  Aprenda acerca de las causas, los síntomas y fases del
-                  Alzheimer así como los avances que se han obtenido.
+                  Aprenda acerca de la enfermedad del alzheimer así como los
+                  avances que se han obtenido.
                 </Card.Text>
                 <div className="d-grid gap-2">
                   <Link
@@ -413,6 +420,7 @@ export const Home = () => {
             <Card
               style={{
                 width: "17rem",
+                height: "31rem",
                 padding: "20px",
                 margin: "40px 10px 40px 10px",
                 backgroundColor: "#feffdf",
@@ -432,13 +440,15 @@ export const Home = () => {
                   y cuidar su salud integral.
                 </Card.Text>
                 <div className="d-grid gap-2">
-                  <Button
+                  <Link
                     variant="light"
                     size="lg"
+                    className="btn btn-light"
+                    to={"/informacion/soycuidador"}
                     style={{ backgroundColor: "#73b1c1" }}
                   >
                     <h3>Accede</h3>
-                  </Button>
+                  </Link>
                 </div>
               </Card.Body>
             </Card>
@@ -446,7 +456,8 @@ export const Home = () => {
           <div className="col">
             <Card
               style={{
-                width: "18rem",
+                width: "17rem",
+                height: "31rem",
                 padding: "20px",
                 margin: "40px 10px 40px 10px",
                 backgroundColor: "#feffdf",
@@ -462,8 +473,8 @@ export const Home = () => {
                   <h2 style={{ textAlign: "center" }}>Mi Coach</h2>
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  Interactúa con un Health Coach y recibe un acompañamiento
-                  online en tu proceso de salud geográfica.
+                  Interactúa con un Health Coach y recibe un acompañamiento en
+                  tu proceso de salud .
                 </Card.Text>
                 <div className="d-grid gap-2">
                   <Button
@@ -480,7 +491,8 @@ export const Home = () => {
           <div className="col">
             <Card
               style={{
-                width: "18rem",
+                width: "17rem",
+                height: "31rem",
                 padding: "20px",
                 margin: "40px 10px 40px 10px",
                 backgroundColor: "#feffdf",

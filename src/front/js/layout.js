@@ -16,6 +16,7 @@ import Ubicacion from "./pages/Ubicacion.jsx";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import InfoUtilidades from "./component/InfoUtilidades";
 import Tratamientos from "./component/Tratamientos";
+import SoyCuidador from "./component/SoyCuidador";
 
 //create your first component
 const Layout = () => {
@@ -43,8 +44,13 @@ const Layout = () => {
                 element={<InfoUtilidades />}
                 path="/informacion/utilidades"
               />
-              <Route element={<Tratamientos />}
-                path="/informacion/utilidades"
+              <Route
+                element={<Tratamientos />}
+                path="/informacion/tratamientos"
+              />
+              <Route
+                element={<SoyCuidador />}
+                path="/informacion/soycuidador"
               />
               <Route element={<Tratamientos />} path="/home" />
 
