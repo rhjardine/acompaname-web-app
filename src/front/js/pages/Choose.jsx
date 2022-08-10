@@ -44,22 +44,23 @@ const Choose = () => {
                 >
                   Invitado
                 </button>
-                <button
+                <a
                   type={"button"}
                   className="tarjeta btn btn-secondary w-100 my-4"
-                  onClick={() => navigate("/home")}
+                  href="/Register"
                   // style={{ backgroundColor: "#1a2537" }}
                 >
                   Cuidador
-                </button>
-                <button
+                </a>
+                <a
                   type={"button"}
                   className="tarjeta btn btn-secondary w-100 my-4"
+                  href="/Register"
                   // onClick={() => navigate(/)}
                   //style={{ backgroundColor: "#1a2537" }}
                 >
                   Paciente
-                </button>
+                </a>
                 <p className="text-start fs-6 text-center">
                   Al registrarte, aceptas nuestras Condiciones de uso y Política
                   de privacidad.
