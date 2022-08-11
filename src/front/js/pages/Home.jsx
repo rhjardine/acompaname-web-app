@@ -508,8 +508,8 @@ export const Home = () => {
                   <h2 style={{ textAlign: "center" }}>Mi Nutrición</h2>
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  Conoce las alternativas de alimentación y
-                  genera los menús sugeridos según su grupo sanguineo.
+                  Conoce las alternativas de alimentación y genera los menús
+                  sugeridos según su grupo sanguineo.
                 </Card.Text>
                 <div className="d-grid gap-2">
                   <Button
