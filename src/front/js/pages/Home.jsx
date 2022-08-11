@@ -241,7 +241,7 @@ export const Home = () => {
             >
               <Card.Img
                 variant="top"
-                src="https://as1.ftcdn.net/v2/jpg/02/38/75/38/1000_F_238753884_IjzDHPyDjICoKQtEKUGcVIJaYz9XtFl2.jpg"
+                src="https://cdn-icons.flaticon.com/png/512/4310/premium/4310496.png?token=exp=1660190901~hmac=ef43a9a48fdc6eb3eed4ab20ba8acc0c"
                 style={{ borderRadius: "20px" }}
               />
               <Card.Body>
@@ -501,15 +501,15 @@ export const Home = () => {
             >
               <Card.Img
                 variant="top"
-                src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png"
+                src="https://cdn-icons.flaticon.com/png/512/4924/premium/4924342.png?token=exp=1660190500~hmac=3edcb1fee3f8155c7d48561e8b755a81"
               />
               <Card.Body>
                 <Card.Title>
-                  <h2 style={{ textAlign: "center" }}>Relaciones</h2>
+                  <h2 style={{ textAlign: "center" }}>Mi Nutrición</h2>
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  Revisa tus las notificaciones a tiempo para un correcto
-                  seguimiento del tratamiento del paciente.
+                  Conoce las alternativas de alimentación y
+                  genera los menús sugeridos según su grupo sanguineo.
                 </Card.Text>
                 <div className="d-grid gap-2">
                   <Button
