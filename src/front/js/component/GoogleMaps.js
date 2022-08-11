@@ -1,11 +1,8 @@
 import React from "react";
 import { useRef, useState, useEffect } from "react";
+import Button from "react-bootstrap/Button";
 
-const GoogleMaps = ({
-    children,
-    center,
-    ...props
-}) => {
+const GoogleMaps = ({ children, center, ...props }) => {
   const ref = useRef();
   const [map, setMap] = useState();
   useEffect(() => {
@@ -27,6 +24,13 @@ const GoogleMaps = ({
   }, [map]);
   return (
     <React.Fragment>
+      <Button
+        variant="succes m-3"
+        style={{ backgroundColor: "#73b1c1", width: "250px" }}
+        href="javascript: history.go(-1)"
+      >
+        Atras
+      </Button>
       <div
         ref={ref}
         id="map"
