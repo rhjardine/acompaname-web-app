@@ -253,13 +253,14 @@ export const Home = () => {
                   enfermedad de Alzheimer.
                 </Card.Text>
                 <div className="d-grid gap-2">
-                  <Button
+                  <Link
                     variant="light"
                     size="lg"
                     style={{ backgroundColor: "#73b1c1" }}
+                    to="/bioage"
                   >
                     <h3>Accede</h3>
-                  </Button>
+                  </Link>
                 </div>
               </Card.Body>
             </Card>

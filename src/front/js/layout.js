@@ -18,6 +18,7 @@ import InfoUtilidades from "./component/InfoUtilidades";
 import Tratamientos from "./component/Tratamientos";
 import SoyCuidador from "./component/SoyCuidador";
 import Team from "./pages/Team.jsx";
+import BioAge from "./component/BioAge.js";
 
 //create your first component
 const Layout = () => {
@@ -41,7 +42,7 @@ const Layout = () => {
               <Route element={<Single />} path="/single/:theid" />
               <Route element={<Home />} path="/home" />
               <Route element={<Team />} path="/team" />
-
+              <Route element={<BioAge />} path="/bioage" />
               <Route
                 element={<InfoUtilidades />}
                 path="/informacion/utilidades"
