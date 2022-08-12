@@ -7,6 +7,7 @@ const InfoUtilidades = () => {
       <div className="container">
         <div className="row">
           <div className="col-12" style={{ margin: "20px" }}>
+            
             <Accordion>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
