@@ -38,6 +38,7 @@ const BioAge = () => {
   return (
     <>
       {/* --------------------Trabajo de Deimian-------------------------- */}
+<<<<<<< HEAD
 
       {/* <div className="container1" style="height: auto;"></div>
       <div className="row align-items-center"></div>
@@ -48,6 +49,11 @@ const BioAge = () => {
       {/* <div className="container1">
         <div className="row align-items-center">
           <h2 className="col align-items-center">Calcula tu Edad Biológica</h2>
+=======
+      <div className="title">
+        <div className="centerText">
+          <h2 className="centerText">Test Edad Biológica</h2>
+>>>>>>> 6eace99cdcb63137cc81653ae4773d007ff51ad5
         </div>
       </div> */}
       <div className="container">
@@ -113,8 +119,25 @@ const BioAge = () => {
                   onChange={handleChange}
                 />
               </div>
+<<<<<<< HEAD
               <div className="form-group mb-4"></div>
               <label>¿Cuál es su sexo o genero</label>
+=======
+              <div className="form-group mb-4">
+                <label>Sexo</label>
+                <input
+                  type="text"
+                  placeholder="Ingrese su género (M o F) "
+                  className="form-control"
+                  name="sexo"
+                  min="10"
+                  max="12"
+                  value={biological.sexo}
+                  onChange={handleChange}
+                />
+              </div>
+
+>>>>>>> 6eace99cdcb63137cc81653ae4773d007ff51ad5
               <select className="form-select mb-4" aria-label="abdomen">
                 <option>Masculino</option>
                 <option>Femenino</option>

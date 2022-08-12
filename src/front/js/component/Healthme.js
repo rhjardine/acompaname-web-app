@@ -10,7 +10,7 @@ const Healthme = () => {
             <Accordion>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  <h4>MENU DE ALIMENTACION ANTIENVEJECIMIENTO</h4>
+                  <h4>MENÚ DE ALIMENTACIÓN ANTIENVEJECIMIENTO</h4>
                 </Accordion.Header>
                 <Accordion.Body
                   style={{ backgroundColor: "#73b1c1", borderRadius: "20px" }}

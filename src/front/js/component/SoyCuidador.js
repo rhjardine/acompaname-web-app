@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
+import { FcHome } from "react-icons/fc";
 
 const SoyCuidador = () => {
   return (
@@ -11,7 +12,7 @@ const SoyCuidador = () => {
           style={{ backgroundColor: "#73b1c1", width: "250px" }}
           href="javascript: history.go(-1)"
         >
-          Atras
+          <FcHome /> Atrás
         </Button>
         <div className="row">
           <div className="col-12" style={{ margin: "20px" }}>
@@ -271,29 +272,39 @@ const SoyCuidador = () => {
                   >
                     <h4>
                       {" "}
-                      <u>¿A QUÉ RIESGOS A LOS QUE ESTÁ EXPUESTO UN CUIDADOR?</u>
+                      <u>
+                        ¿CUÁLES SON LOS RIESGOS A LOS QUE ESTÁ EXPUESTO UN
+                        CUIDADOR?
+                      </u>
                     </h4>{" "}
-                    ALTERACIONES FÍSICAS Ya en 2004, Badía et al. en su estudio
-                    encontraron que casi el 85% de los cuidadores desarrollan
-                    problemas físicos, destacando como los más frecuentes,
-                    dolores de cabeza (52,2%), dolores de espalda (60,4%),
-                    ahogos (73%), insomnio o sueño no reparador (68,7%), fatiga
-                    y cansancio (77,6%) y fracturas óseas o esguinces (14,2%), y
-                    en 2021 las cosas poco han cambiado. Entre las alteraciones
-                    físicas más frecuentes, encontramos: Cansancio/fatiga
-                    persistente. Alteraciones del sueño. Cefalea. Problemas
+                    <br></br>
+                    <h5>
+                      <u>ALTERACIONES FÍSICAS:</u>
+                    </h5>{" "}
+                    Ya en 2004, Badía et al. en su estudio encontraron que casi
+                    el 85% de los cuidadores desarrollan problemas físicos,
+                    destacando como los más frecuentes, dolores de cabeza
+                    (52,2%), dolores de espalda (60,4%), ahogos (73%), insomnio
+                    o sueño no reparador (68,7%), fatiga y cansancio (77,6%) y
+                    fracturas óseas o esguinces (14,2%), y en 2021 las cosas
+                    poco han cambiado. Entre las alteraciones físicas más
+                    frecuentes, encontramos: Cansancio/fatiga persistente.
+                    Alteraciones del sueño. Cefalea. Problemas
                     gastrointestinales Trastornos osteo-musculares Trastornos
-                    metabólicos…
+                    metabólicos.
                     <br></br>
                     <br></br>
-                    ALTERACIONES PSICOLÓGICAS Para evitar problemas (tanto
-                    físicos como psicológicos) o minimizarlos, es muy importante
-                    que el cuidador tome conciencia de que tiene que cuidarse y
-                    esa toma de conciencia tiene que estar presente desde el
-                    principio, desde que se conoce el diagnóstico del paciente.
+                    <h5>
+                      <u>ALTERACIONES PSICOLÓGICAS:</u>
+                    </h5>{" "}
+                    Para evitar problemas (tanto físicos como psicológicos) o
+                    minimizarlos, es muy importante que el cuidador tome
+                    conciencia de que tiene que cuidarse y esa toma de
+                    conciencia tiene que estar presente desde el principio,
+                    desde que se conoce el diagnóstico del paciente.
                     Preocupación: irritabilidad, sentimientos de culpa y
                     aislamiento. Tristeza Depresión Ansiedad Pensamientos
-                    erróneos
+                    erróneos.
                     <br></br>
                     <br></br>
                     Buscar apoyo familiar y social ayudará a evitar el
@@ -302,41 +313,61 @@ const SoyCuidador = () => {
                     herramienta terapéutica.
                     <br></br>
                     <br></br>
-                    EMOCIONES MÁS FRECUENTES LA NEGACIÓN Es frecuente al
-                    aparecer los primeros síntomas, achacando estos a la edad, a
-                    un momento puntual o al temor de que sea un problema más
-                    grave y después al recibir el diagnóstico. Aparece como un
-                    mecanismo de defensa para enfrentarse a la situación y
-                    adaptarse a ella, pero si se prolonga en el tiempo, la no
-                    aceptación del diagnóstico puede nublar la toma de
-                    decisiones importantes y mermar la capacidad para ayudar a
-                    la persona enferma. EL MIEDO Es una emoción surgida como
-                    reacción ante el diagnóstico y ante lo desconocido, pero
-                    asentarse en el miedo y vivir con el miedo de que pasará,
-                    puede llevar al cuidador a no centrarse en el presente. LA
-                    TRISTEZA Es un sentimiento que suele aparecer al conocer el
-                    diagnóstico, pero no puede vivirse ni convertirse en
+                    <h5>
+                      <u>EMOCIONES MÁS FRECUENTES LA NEGACIÓN:</u>
+                    </h5>{" "}
+                    Es frecuente al aparecer los primeros síntomas, achacando
+                    estos a la edad, a un momento puntual o al temor de que sea
+                    un problema más grave y después al recibir el diagnóstico.
+                    Aparece como un mecanismo de defensa para enfrentarse a la
+                    situación y adaptarse a ella, pero si se prolonga en el
+                    tiempo, la no aceptación del diagnóstico puede nublar la
+                    toma de decisiones importantes y mermar la capacidad para
+                    ayudar a la persona enferma.
+                    <br></br>
+                    <br></br>
+                    EL MIEDO: Es una emoción surgida como reacción ante el
+                    diagnóstico y ante lo desconocido, pero asentarse en el
+                    miedo y vivir con el miedo de que pasará, puede llevar al
+                    cuidador a no centrarse en el presente.
+                    <br></br>
+                    <br></br>
+                    LA TRISTEZA: Es un sentimiento que suele aparecer al conocer
+                    el diagnóstico, pero no puede vivirse ni convertirse en
                     persistente, aún siendo muy dolorosa la situación, por las
                     consecuencias que tiene tanto sobre el enfermo como sobre el
-                    cuidador. LA PREOCUPACIÓN Es inevitable y nace del pensar
-                    “que pasará mañana”, pero hay que vivir el presente, el
-                    mañana ya llegará. EL STRESS/ANSIEDAD Son también muy
-                    frecuentes y nacen del “no saber cómo actuar” y del “no
-                    saber que pasará”, por lo que derivado de esto último, con
-                    el avance de la enfermedad en que las necesidades y cuidados
-                    son mayores, el stress y la ansiedad pueden ir a más. Hay
-                    que pedir ayuda. LA FRUSTRACIÓN Y LA IMPOTENCIA Son
-                    emociones que también nacen del desconocimiento del manejo
-                    y/o a veces de no conseguir atender, calmar, consolar al
-                    paciente. Son sentimientos frecuentemente aflorados cuando
-                    hay trastornos de conducta. Hay que pedir ayuda. EL
-                    AGOTAMIENTO Aparece con el avance de la enfermedad y nace de
-                    carga física y psíquica, derivada de los cuidados al
+                    cuidador.
+                    <br></br>
+                    <br></br>
+                    LA PREOCUPACIÓN Es inevitable y nace del pensar “que pasará
+                    mañana”, pero hay que vivir el presente, el mañana ya
+                    llegará.
+                    <br></br>
+                    <br></br>
+                    EL ESTRÉS/ANSIEDAD: Son también muy frecuentes y nacen del
+                    “no saber cómo actuar” y del “no saber que pasará”, por lo
+                    que derivado de esto último, con el avance de la enfermedad
+                    en que las necesidades y cuidados son mayores, el stress y
+                    la ansiedad pueden ir a más. Hay que pedir ayuda.
+                    <br></br>
+                    <br></br>
+                    LA FRUSTRACIÓN Y LA IMPOTENCIA: Son emociones que también
+                    nacen del desconocimiento del manejo y/o a veces de no
+                    conseguir atender, calmar, consolar al paciente. Son
+                    sentimientos frecuentemente aflorados cuando hay trastornos
+                    de conducta. Hay que pedir ayuda.
+                    <br></br>
+                    <br></br>
+                    EL AGOTAMIENTO: Aparece con el avance de la enfermedad y
+                    nace de carga física y psíquica, derivada de los cuidados al
                     paciente. Cuando aparece hay que pedir ayuda, la atención al
                     paciente con Enfermedad de Alzheimer, debería ser
-                    compartida. EL DOLOR Una emoción presente durante toda la
-                    etapa del cuidador, al principio reactivo al deterioro que
-                    va sufriendo el paciente, después reactivo a que el paciente
+                    compartida.
+                    <br></br>
+                    <br></br>
+                    EL DOLOR: Una emoción presente durante toda la etapa del
+                    cuidador, al principio reactivo al deterioro que va
+                    sufriendo el paciente, después reactivo a que el paciente
                     pierde su identidad dejando un gran vacío emocional y
                     finalmente por la pérdida de la persona cuidada. Ignorar
                     estas emociones, sentimientos y síntomas, deteriora la salud
