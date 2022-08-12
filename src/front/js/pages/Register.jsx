@@ -11,21 +11,22 @@ const Register = () => {
   };
   const navigate = useNavigate();
   const { store, actions } = useContext(Context);
-  const params = useParams()
+  const params = useParams();
 
   const handleLogin = async (data) => {
     // esta funcion registra usuario
     const result = await actions.signUp(data, params.naturaleza);
     if (result) {
       navigate("/home");
+      alert("Se ha registrado correctamente");
     } else {
       alert("El usuario no puede ser creado. Revise e intenté de nuevo");
     }
   };
 
   useEffect(() => {
-    console.log(params.naturaleza)
-  },[])
+    console.log(params.naturaleza);
+  }, []);
 
   return (
     <>

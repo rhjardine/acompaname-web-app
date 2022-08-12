@@ -27,6 +27,15 @@ def get_pacientes():
 
     return jsonify(all_pacientes),200
 
+@api.route('/cuidadores', methods=['GET'])
+def get_cuidadores():
+
+    # this is how you can use the Family datastructure by calling its methods
+    cuidadores = Cuidador.query.all()
+    all_cuidadores = list(map(lambda x: x.serialize(), cuidadores))
+
+    return jsonify(all_cuidadores),200
+
 
 # @api.route("/user", methods=["POST"])
 # def handle_users():
