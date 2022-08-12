@@ -17,7 +17,7 @@ export const Footer = () => (
     <section className="footer-info">
       <section className="footer-info-left">
         <section className="footer-info__name">
-          Proyecto Web App AcompañaME (MVP)
+          Proyecto Web App AcompáñaME (MVP)
           <br />
           Participantes:
         </section>
@@ -34,7 +34,7 @@ export const Footer = () => (
       <section className="footer-info-center">
         <section className="footer-info__email"></section>
         <section className="footer-info__terms">
-          Terminos y Condiciones
+          Términos y Condiciones
           <br />
           Todos los Derechos Reservados
         </section>
@@ -46,7 +46,7 @@ export const Footer = () => (
           <br />
           Ernesto Medina
           <br />
-          Bryan Garcia
+          Bryan García
           <br />
           José Morrone
         </section>

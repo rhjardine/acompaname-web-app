@@ -11,7 +11,7 @@ const SoyCuidador = () => {
           style={{ backgroundColor: "#73b1c1", width: "250px" }}
           href="javascript: history.go(-1)"
         >
-          Atras
+          Atrás
         </Button>
         <div className="row">
           <div className="col-12" style={{ margin: "20px" }}>
@@ -271,7 +271,7 @@ const SoyCuidador = () => {
                   >
                     <h4>
                       {" "}
-                      <u>¿A QUÉ RIESGOS A LOS QUE ESTÁ EXPUESTO UN CUIDADOR?</u>
+                      <u>¿CUÁLES SON LOS RIESGOS A LOS QUE ESTÁ EXPUESTO UN CUIDADOR?</u>
                     </h4>{" "}
                     <br></br>
                     <h5><u>ALTERACIONES FÍSICAS:</u></h5> Ya en 2004, Badía et al. en su estudio

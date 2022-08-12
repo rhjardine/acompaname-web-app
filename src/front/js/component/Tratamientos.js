@@ -11,7 +11,7 @@ const Tratamientos = () => {
           style={{ backgroundColor: "#73b1c1", width: "250px" }}
           href="javascript: history.go(-1)"
         >
-          Atras
+          Atrás
         </Button>
         <div className="row">
           <div className="col-12" style={{ margin: "20px" }}>
