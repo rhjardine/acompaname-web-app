@@ -40,7 +40,7 @@ const BioAge = () => {
       {/* --------------------Trabajo de Deimian-------------------------- */}
       <div className="title">
         <div className="centerText">
-          <h2 className="centerText">Test Edad Biologica</h2>
+          <h2 className="centerText">Test Edad Biológica</h2>
         </div>
       </div>
       <div className="container">
@@ -64,7 +64,7 @@ const BioAge = () => {
                 <label>Sexo</label>
                 <input
                   type="text"
-                  placeholder="Ingrese su genero (M o F) "
+                  placeholder="Ingrese su género (M o F) "
                   className="form-control"
                   name="sexo"
                   min="10"
