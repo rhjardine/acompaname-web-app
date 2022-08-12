@@ -49,6 +49,7 @@ const BioAge = () => {
     } else {
       setResult(result - 1)
     }
+    
     //a que edad vas a morir
     if (morir == "sumaUno") {
       setResult(parseInt(edad) + 1)
