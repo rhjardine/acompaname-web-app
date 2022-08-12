@@ -101,7 +101,7 @@ export const Home = () => {
                     Acerca de
                   </Button>{" "}
                   <Button
-                    href="/login"
+                    href="/Team"
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
@@ -256,8 +256,9 @@ export const Home = () => {
                   <Link
                     variant="light"
                     size="lg"
-                    style={{ backgroundColor: "#73b1c1" }}
+                    className="btn btn-light"
                     to="/bioage"
+                    style={{ backgroundColor: "#73b1c1" }}
                   >
                     <h3>Accede</h3>
                   </Link>
