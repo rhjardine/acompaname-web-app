@@ -91,7 +91,7 @@ export const Home = () => {
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
-                    <FcBusinessContact /> Registrate
+                    <FcBusinessContact /> Regístrate
                   </Button>{" "}
                   <Button
                     href="/login"
