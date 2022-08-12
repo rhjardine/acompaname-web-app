@@ -43,9 +43,10 @@ const Team = () => {
                   <h3 style={{ textAlign: "center" }}>Pedro Maldonado</h3>
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  Más de 20 años de experiencia como realizador audiovisual con
+                  Más de 10 años de experiencia como realizador audiovisual con
                   experiencia en producción de eventos corporativos en vivo.
-                  Actualmente estudiando programación web..
+                  Actualmente estoy culminando estudios como Desarrollador Full
+                  Stack en 4Geeks Academy
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -75,7 +76,7 @@ const Team = () => {
                   profesión y esta me ha permitido trabajar en el mundo digital
                   para agencias de publicidad, televisión, radio, revistas y de
                   manera autónoma, siempre llevando mi escritura creativa. Y,
-                  ahora, echando uno que otro código como estudiante en 4 Geeks
+                  ahora, echando uno que otro código como estudiante en 4Geeks
                   Academy.
                 </Card.Text>
               </Card.Body>
@@ -103,10 +104,10 @@ const Team = () => {
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   <p>
-                    Amante desde pequeño por las computadoras mi pasión crecio
-                    grandemente por la informatica, lo cual me llevo a estudiar
-                    Ing en informatica en donde conoci el gran mundo de la
-                    programacion, y gracias a 4geeks pude llevar el aprendizaje
+                    Amante desde pequeño por las computadoras mi pasión creció
+                    grandemente por la informática, lo cual me llevo a estudiar
+                    Ing. en informática en donde conocí el gran mundo de la
+                    programación, y gracias a 4Geeks pude llevar el aprendizaje
                     al maximo!!{" "}
                   </p>
                 </Card.Text>
@@ -135,7 +136,7 @@ const Team = () => {
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   Soy un profesional de la informática y el Coaching, con mas de
-                  20 años de experiencia en el sistema financiero venezolano en
+                  10 años de experiencia en el sistema financiero venezolano en
                   el área de Gerencia de servicios al cliente. Mis intereses
                   profesionales están orientados a efectuar una transición de
                   carrera específicamente hacia el sector IT en los campos de
