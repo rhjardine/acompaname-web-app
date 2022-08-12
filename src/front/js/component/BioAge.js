@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 
 const BioAge = () => {
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState(0);
+  const [error, setError] = useState(false)
   const [biological, setBiological] = useState({
     edad: "",
     sexo: "",
@@ -24,6 +25,9 @@ const BioAge = () => {
     ejerfuerza: "",
   });
 
+  //destructuracion
+  const { edad, amigos, morir } = biological
+
   function handleChange(event) {
     setBiological({
       ...biological,
@@ -32,29 +36,30 @@ const BioAge = () => {
   }
 
   function handleCalculate() {
-    setResult(biological.edad);
-  }
+    //medidas
 
+    if (edad <= 25) {
+      console.log("edad mayor a 25")
+    }
+    if (amigos == "ninguno") {
+      setResult(parseInt(edad) + 1)
+    } else if (amigos == "unoATres") {
+
+      setResult(parseInt(edad) - 0.5)
+    } else {
+      setResult(result - 1)
+    }
+    //a que edad vas a morir
+    if (morir == "sumaUno") {
+      setResult(parseInt(edad) + 1)
+    } else if (morir == "restaDos") {
+      setResult(parseInt(edad) - 2)
+    }
+
+  }
+  <option value="restaDos">Después de los 100</option>
   return (
     <>
-      {/* --------------------Trabajo de Deimian-------------------------- */}
-
-      {/* <div className="container1" style="height: auto;"></div>
-      <div className="row align-items-center"></div>
-        <div className="col-md-9 ml-auto mr-auto mb-3 text-center bg-bl-nw">
-          <h2 className="login_header">Cuestionario de Salud </h2>
-  </div> */}
-
-      {/* <div className="container1">
-        <div className="row align-items-center">
-          <h2 className="col align-items-center">Calcula tu Edad Biológica</h2>
-=======
-      <div className="title">
-        <div className="centerText">
-          <h2 className="centerText">Test Edad Biológica</h2>
->>>>>>> 6eace99cdcb63137cc81653ae4773d007ff51ad5
-        </div>
-      </div> */}
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 col-md-8">
@@ -122,46 +127,35 @@ const BioAge = () => {
               <div className="form-group mb-4"></div>
               <label>¿Cuál es su sexo</label>
               <div className="form-group mb-4"></div>
-              <select className="form-select mb-4" aria-label="abdomen">
-                <option>Masculino</option>
-                <option>Femenino</option>
+              <select className="form-select mb-4" name="sexo" aria-label="abdomen" onChange={handleChange}>
+                <option value="">Seleccione Sexo</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
               </select>
-
-              {/* <input
-                  type="text"
-                  placeholder="Ingrese su género (M o F) "
-                  className="form-control"
-                  name="sexo"
-                  min="10"
-                  max="12"
-                  value={biological.sexo}
-                  onChange={handleChange}
-                />
-              </div> */}
 
               <div className="form-group mb-4"></div>
               <label>¿Con cuántos amigos compartes tus problemas?</label>
-              <select className="form-select mb-4" aria-label="abdomen">
-                {/* <div><select class="campos" id="amigos"> */}
-                <option value="+1">Con ninguno</option>
-                <option value="-0.5">Con uno a tres amigos</option>
-                <option value="-1">Con cuatro o más</option>
+              <select className="form-select mb-4" aria-label="abdomen" name="amigos" onChange={handleChange}>
+                <option value="">Seleccionar un campo</option>
+                <option value="ninguno">Con ninguno</option>
+                <option value="unoATres">Con uno a tres amigos</option>
+                <option value="masCuatro">Con cuatro o más</option>
               </select>
 
               <div className="form-group mb-4"></div>
               <label>¿A qué edad crees que vas a morir?</label>
-              <select className="form-select mb-4" aria-label="morir">
-                {/* <option selected></option> */}
-                <option value="+2">Antes de los 75</option>
-                <option value="+1">Entre los 76 y los 90</option>
-                <option value="+0">Entre los 91 y 99</option>
-                <option value="-2">Después de los 100</option>
+              <select className="form-select mb-4" aria-label="morir" name="morir" onChange={handleChange}>
+                <option selected>Seleccione un campo</option>
+                <option value="sumaDos">Antes de los 75</option>
+                <option value="sumaUno">Entre los 76 y los 90</option>
+                <option value="igual">Entre los 91 y 99</option>
+                <option value="restaDos">Después de los 100</option>
               </select>
 
-              <div className="form-group mb-4"></div>
+              {/* <div className="form-group mb-4"></div>
               <label>¿Cuántos abrazos o besos recibes por semana?</label>
               <select className="form-select mb-4" aria-label="afectos">
-                {/* <option selected></option> */}
+                {/* <option selected></option> 
                 <option value="+1">Ninguno</option>
                 <option value="-0.5">De 1 a 3</option>
                 <option value="-1">Cuatro o más</option>
@@ -173,7 +167,7 @@ const BioAge = () => {
               </label>
               <select className="form-select mb-4" aria-label="talones">
                 {/* <option selected></option> */}
-                {/* <option selected="selected" value="-1">Fácilmente</option> */}
+              {/* <option selected="selected" value="-1">Fácilmente</option> 
                 <option value="+0">Si empujo un poco</option>
                 <option value="+0.5">Casi puedo</option>
                 <option value="+1">Entre 2 y 5 cm</option>
@@ -184,8 +178,8 @@ const BioAge = () => {
               <label>¿Cuál es la forma de tu cuerpo?</label>
               <select className="form-select mb-4" aria-label="condicionf">
                 {/* <option selected></option> */}
-                {/* <div><select class="campos" id="peso"> */}
-                {/* <option selected="selected" value="+3">Obesa</option> */}
+              {/* <div><select class="campos" id="peso"> */}
+              {/* <option selected="selected" value="+3">Obesa</option> 
                 <option value="+2">Ligero sobrepeso</option>
                 <option value="+1">Cinco kilos de sobrepeso</option>
                 <option value="-1.5">Perfecta para mi altura</option>
@@ -196,7 +190,7 @@ const BioAge = () => {
               <label>¿Cuan grande es tu abdomen?</label>
               <select className="form-select mb-4" aria-label="abdomen">
                 {/* <option selected></option> */}
-                {/* <div><select class="campos" id="barri"> */}
+              {/* <div><select class="campos" id="barri"> 
                 <option value="+2">Muy grande</option>
                 <option value="+1.5">Redonda</option>
                 <option value="+0">Casi chata</option>
@@ -206,7 +200,7 @@ const BioAge = () => {
               <div className="form-group mb-4"></div>
               <label>¿Con qué frecuencia sientes cansancio?</label>
               <select className="form-select mb-4" aria-label="condiciof">
-                {/* <div><select class="campos" id="cansancio"> */}
+                {/* <div><select class="campos" id="cansancio"> 
                 <option value="+2">Casi todos los días</option>
                 <option value="+1.5">
                   Casi todos los días después de almorzar
@@ -219,7 +213,7 @@ const BioAge = () => {
               <label>
                 ¿Cuánto es lo más que has bebido en un día el último año?
               </label>
-              {/* <div><select class="campos" id="bebida"> */}
+              {/* <div><select class="campos" id="bebida"> 
               <select className="form-select mb-4" aria-label="bebidas">
                 <option value="+0">Tres vasos o copas o menos</option>
                 <option value="+0.5">Cuatro vasos</option>
@@ -230,7 +224,7 @@ const BioAge = () => {
               <div className="form-group mb-4"></div>
               <label>¿Tomas refrescos o jugos sintéticos o industriales?</label>
               <select className="form-select mb-4" aria-label="sinteticas">
-                {/* <div><select class="campos" id="jugos"> */}
+                {/* <div><select class="campos" id="jugos">
                 <option value="-1">Nunca</option>
                 <option value="+0.5">Uno a tres vasos por semana</option>
                 <option value="+1">Cuatro a seis vasos</option>
@@ -240,7 +234,7 @@ const BioAge = () => {
               <div className="form-group mb-4"></div>
               <label>¿Eres fumador?</label>
               <select className="form-select mb-4" aria-label="fumador">
-                {/* <div><select class="campos" id="jugos"> */}
+                {/* <div><select class="campos" id="jugos">
                 <option value="-2">Dejé hace 5 años o más</option>
                 <option value="-1">Dejé hace 3 a 5 años</option>
                 <option value="+0">Dejé hace 1 a 3 años</option>
@@ -254,7 +248,7 @@ const BioAge = () => {
                 cepillas?
               </label>
               <select className="form-select mb-4" aria-label="dentales">
-                {/* <div><select class="campos" id="dientes"> */}
+                {/* <div><select class="campos" id="dientes"> 
                 <option value="+1.5">
                   Si sangran y son más de 10 los dientes arreglados
                 </option>
@@ -270,7 +264,7 @@ const BioAge = () => {
               </label>
               <select className="form-select mb-4" aria-label="ejercicios">
                 "{/* <div><select class="campos" id="caminar"> */}
-                {/* <option selected="selected" value="+1"> */}
+              {/* <option selected="selected" value="+1"> 
                 <option value="+0">Nunca</option>
                 <option value="+0">De 1 a 2</option>
                 <option value="-0.5">De 3 a 4</option>
@@ -280,7 +274,7 @@ const BioAge = () => {
               <div className="form-group mb-4"></div>
               <label><h6>¿Haz consumido antibióticos los últimos cinco años?</h6></label>
               <select className="form-select mb-4" aria-label="antibioticos">
-                {/* <div><select class="campos" id="dientes"> */}
+                {/* <div><select class="campos" id="dientes"> 
                 <option value="-2">No</option>
                 <option value="+2">Una a dos veces</option>
                 <option value="+5">Tres o más veces</option>
@@ -288,9 +282,9 @@ const BioAge = () => {
 
               <div className="form-group mb-4"></div>
               <label><h6>¿Cuántos resfríos sufristes el último año?</h6></label>
-              {/* <div><select class="campos" id="resfrio"> */}
+              {/* <div><select class="campos" id="resfrio"> 
               <select className="form-select mb-4" aria-label="resfrios">
-                {/* <option selected="selected" value="+1.5"> */}
+                {/* <option selected="selected" value="+1.5"> 
                 <option>Cinco o más</option>
                 <option value="+1">Tres o cuatro</option>
                 <option value="-0.5">Uno o dos</option>
@@ -300,8 +294,8 @@ const BioAge = () => {
               <div className="form-group mb-4"></div>
               <label>¿Consumes enlatados y comidas en conserva?</label>
               <select className="form-select mb-4" aria-label="enlatados">
-                "{/* <div><select class="campos" id="conservas"> */}
-                {/* <option selected="selected" value="-3">Para todas las comidas</option> */}
+                "{/* <div><select class="campos" id="conservas"> 
+                {/* <option selected="selected" value="-3">Para todas las comidas</option> 
                 <option value="+1">La mayoría</option>
                 <option value="-1">
                   Para menos de la mitad de mis comidas
@@ -314,14 +308,14 @@ const BioAge = () => {
                 ¿Cuántes veces por semana te sientes demasiado lleno después de
                 comer?
               </label>
-              {/* <div><select class="campos" id="lleno"> */}
+              {/* <div><select class="campos" id="lleno"> 
               <select className="form-select mb-4" aria-label="enlatados">
                 <option value="+3">Más de siete veces</option>
                 <option value="+2">De 3 a 6</option>
                 <option value="+1">De 1 a 2</option>
                 <option value="-1.5">Nunca</option>
-              </select>
-
+              </select> */}
+              {error && <p className="alert alert-danger"></p>}
               <button type="button" onClick={() => handleCalculate()}>
                 Calcular Edad Biológica
               </button>
