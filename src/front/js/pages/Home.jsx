@@ -286,7 +286,7 @@ export const Home = () => {
             >
               <Card.Img
                 variant="top"
-                src="https://cdn-icons.flaticon.com/png/512/3098/premium/3098185.png?token=exp=1660267186~hmac=622590ba50d68fb2239166d516cd5f69"
+                src="https://cdn-icons.flaticon.com/png/512/2804/premium/2804895.png?token=exp=1660321945~hmac=f3540dc88fc39c76b0db70eb3cde1080"
                 style={{ borderRadius: "20px" }}
               />
               <Card.Body>

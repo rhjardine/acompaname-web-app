@@ -118,12 +118,16 @@ const BioAge = () => {
                   onChange={handleChange}
                 />
               </div>
+
               <div className="form-group mb-4"></div>
-              <label>¿Cuál es su sexo o genero</label>
-=======
-              <div className="form-group mb-4">
-                <label>Sexo</label>
-                <input
+              <label>¿Cuál es su sexo</label>
+              <div className="form-group mb-4"></div>
+              <select className="form-select mb-4" aria-label="abdomen">
+                <option>Masculino</option>
+                <option>Femenino</option>
+              </select>
+
+              {/* <input
                   type="text"
                   placeholder="Ingrese su género (M o F) "
                   className="form-control"
@@ -133,13 +137,7 @@ const BioAge = () => {
                   value={biological.sexo}
                   onChange={handleChange}
                 />
-              </div>
-
-
-              <select className="form-select mb-4" aria-label="abdomen">
-                <option>Masculino</option>
-                <option>Femenino</option>
-              </select>
+              </div> */}
 
               <div className="form-group mb-4"></div>
               <label>¿Con cuántos amigos compartes tus problemas?</label>
@@ -195,7 +193,7 @@ const BioAge = () => {
               </select>
 
               <div className="form-group mb-4"></div>
-              <label>¿Cuán grande es tu barriga?</label>
+              <label>¿Cuan grande es tu abdomen?</label>
               <select className="form-select mb-4" aria-label="abdomen">
                 {/* <option selected></option> */}
                 {/* <div><select class="campos" id="barri"> */}
@@ -206,9 +204,8 @@ const BioAge = () => {
               </select>
 
               <div className="form-group mb-4"></div>
-              <label></label>
+              <label>¿Con qué frecuencia sientes cansancio?</label>
               <select className="form-select mb-4" aria-label="condiciof">
-                <option selected></option>
                 {/* <div><select class="campos" id="cansancio"> */}
                 <option value="+2">Casi todos los días</option>
                 <option value="+1.5">
@@ -223,27 +220,116 @@ const BioAge = () => {
                 ¿Cuánto es lo más que has bebido en un día el último año?
               </label>
               {/* <div><select class="campos" id="bebida"> */}
-              <select className="form-select mb-4" aria-label="abdomen">
+              <select className="form-select mb-4" aria-label="bebidas">
                 <option value="+0">Tres vasos o copas o menos</option>
                 <option value="+0.5">Cuatro vasos</option>
                 <option value="+1">Cinco o menos</option>
                 <option value="+1.5">Más de cinco</option>
               </select>
 
-              {/* </select></div>¿Fumas?</td><td><div><select class="campos" id="fuma">
-				<option selected="selected" value="-3">No, nunca fumé</option>
-				<option value="-2">Dejé hace 5 años o más</option>	
-				<option value="-1">Dejé hace 3 a 5 años</option>
-				<option value="+0">Dejé hace 1 a 3 años</option>
-				<option value="+1">Dejé este año</option>
-				<option value="+3">Si, fumo</option>					
-</select> */}
+              <div className="form-group mb-4"></div>
+              <label>¿Tomas refrescos o jugos sintéticos o industriales?</label>
+              <select className="form-select mb-4" aria-label="sinteticas">
+                {/* <div><select class="campos" id="jugos"> */}
+                <option value="-1">Nunca</option>
+                <option value="+0.5">Uno a tres vasos por semana</option>
+                <option value="+1">Cuatro a seis vasos</option>
+                <option value="+2">Más de siete</option>
+              </select>
+
+              <div className="form-group mb-4"></div>
+              <label>¿Eres fumador?</label>
+              <select className="form-select mb-4" aria-label="fumador">
+                {/* <div><select class="campos" id="jugos"> */}
+                <option value="-2">Dejé hace 5 años o más</option>
+                <option value="-1">Dejé hace 3 a 5 años</option>
+                <option value="+0">Dejé hace 1 a 3 años</option>
+                <option value="+1">Dejé este año</option>
+                <option value="+3">Si, fumo</option>
+              </select>
+
+              <div className="form-group mb-4"></div>
+              <label>
+                ¿Tienes muchos arreglos dentales o tus encías sangran cuando las
+                cepillas?
+              </label>
+              <select className="form-select mb-4" aria-label="dentales">
+                {/* <div><select class="campos" id="dientes"> */}
+                <option value="+1.5">
+                  Si sangran y son más de 10 los dientes arreglados
+                </option>
+                <option value="+1">4 a 10 dientes arreglados</option>
+                <option value="+0.5">1 a 3 dientes arreglados</option>
+                <option value="+0">No</option>
+              </select>
+
+              <div className="form-group mb-4"></div>
+              <label>
+                ¿Cuántas veces por semana caminas o realizas ejercicio por 30
+                minutos o más?
+              </label>
+              <select className="form-select mb-4" aria-label="ejercicios">
+                "{/* <div><select class="campos" id="caminar"> */}
+                {/* <option selected="selected" value="+1"> */}
+                <option value="+0">Nunca</option>
+                <option value="+0">De 1 a 2</option>
+                <option value="-0.5">De 3 a 4</option>
+                <option value="-1.5">Cinco o más</option>
+              </select>
+
+              <div className="form-group mb-4"></div>
+              <label><h6>¿Haz consumido antibióticos los últimos cinco años?</h6></label>
+              <select className="form-select mb-4" aria-label="antibioticos">
+                {/* <div><select class="campos" id="dientes"> */}
+                <option value="-2">No</option>
+                <option value="+2">Una a dos veces</option>
+                <option value="+5">Tres o más veces</option>
+              </select>
+
+              <div className="form-group mb-4"></div>
+              <label><h6>¿Cuántos resfríos sufristes el último año?</h6></label>
+              {/* <div><select class="campos" id="resfrio"> */}
+              <select className="form-select mb-4" aria-label="resfrios">
+                {/* <option selected="selected" value="+1.5"> */}
+                <option>Cinco o más</option>
+                <option value="+1">Tres o cuatro</option>
+                <option value="-0.5">Uno o dos</option>
+                <option value="-1"> Ninguno</option>
+              </select>
+
+              <div className="form-group mb-4"></div>
+              <label>¿Consumes enlatados y comidas en conserva?</label>
+              <select className="form-select mb-4" aria-label="enlatados">
+                "{/* <div><select class="campos" id="conservas"> */}
+                {/* <option selected="selected" value="-3">Para todas las comidas</option> */}
+                <option value="+1">La mayoría</option>
+                <option value="-1">
+                  Para menos de la mitad de mis comidas
+                </option>
+                <option value="-2">Nunca uso comida en conservas</option>
+              </select>
+
+              <div className="form-group mb-4"></div>
+              <label>
+                ¿Cuántes veces por semana te sientes demasiado lleno después de
+                comer?
+              </label>
+              {/* <div><select class="campos" id="lleno"> */}
+              <select className="form-select mb-4" aria-label="enlatados">
+                <option value="+3">Más de siete veces</option>
+                <option value="+2">De 3 a 6</option>
+                <option value="+1">De 1 a 2</option>
+                <option value="-1.5">Nunca</option>
+              </select>
 
               <button type="button" onClick={() => handleCalculate()}>
-                Calcular Edad
+                Calcular Edad Biológica
               </button>
             </form>
-            {`Tu edad biológica es: ${result}`}
+
+            <div class="alert alert-success" role="alert">
+              {`Tu edad biológica es: ${result}`}
+            </div>
           </div>
         </div>
       </div>
