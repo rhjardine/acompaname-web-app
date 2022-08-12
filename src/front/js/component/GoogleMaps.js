@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef, useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
+import { FcHome } from "react-icons/fc";
 
 const GoogleMaps = ({ children, center, ...props }) => {
   const ref = useRef();
@@ -29,7 +30,7 @@ const GoogleMaps = ({ children, center, ...props }) => {
         style={{ backgroundColor: "#73b1c1", width: "250px" }}
         href="javascript: history.go(-1)"
       >
-        Atrás
+        <FcHome /> Ir atras
       </Button>
       <div
         ref={ref}

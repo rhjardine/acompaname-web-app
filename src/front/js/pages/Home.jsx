@@ -8,8 +8,15 @@ import Row from "react-bootstrap/Row";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import ListGroup from "react-bootstrap/ListGroup";
 import { Link } from "react-router-dom";
-import styles from "./Register.module.css";
 import Stack from "react-bootstrap/Stack";
+import {
+  FcHome,
+  FcBusinessContact,
+  FcExternal,
+  FcCollaboration,
+  FcSurvey,
+  FcLike,
+} from "react-icons/fc";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -57,7 +64,7 @@ export const Home = () => {
           onClick={handleShow}
           style={{ backgroundColor: "#73b1c1", width: "250px" }}
         >
-          Menú
+          <FcHome /> Menú
         </Button>
 
         <Offcanvas
@@ -77,35 +84,35 @@ export const Home = () => {
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1", padding: "5px" }}
                   >
-                    Home
+                    <FcHome /> Home
                   </Button>{" "}
                   <Button
                     href="/choose"
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
-                    Registrate
+                    <FcBusinessContact /> Registrate
                   </Button>{" "}
                   <Button
                     href="/login"
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
-                    Login
+                    <FcExternal /> Login
                   </Button>{" "}
                   <Button
-                    href="/login"
+                    href="/AcercaDe"
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
-                    Acerca de
+                    <FcSurvey /> Acerca de
                   </Button>{" "}
                   <Button
                     href="/Team"
                     variant="succes"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
-                    Contáctanos
+                    <FcCollaboration /> Contáctanos
                   </Button>{" "}
                 </Stack>
               </ListGroup>
@@ -241,7 +248,7 @@ export const Home = () => {
             >
               <Card.Img
                 variant="top"
-                src="https://cdn-icons.flaticon.com/png/512/4310/premium/4310496.png?token=exp=1660190901~hmac=ef43a9a48fdc6eb3eed4ab20ba8acc0c"
+                src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png"
                 style={{ borderRadius: "20px" }}
               />
               <Card.Body>
@@ -249,8 +256,8 @@ export const Home = () => {
                   <h2 style={{ textAlign: "center" }}>Mi Salud</h2>
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  Conoce tu edad biológica y el riesgo precoz de padecer la
-                  enfermedad de Alzheimer.
+                  Conoce tu edad biológica y el riesgo precoz de la enfermedad
+                  de Alzheimer.
                 </Card.Text>
                 <div className="d-grid gap-2">
                   <Link
@@ -260,7 +267,7 @@ export const Home = () => {
                     to="/bioage"
                     style={{ backgroundColor: "#73b1c1" }}
                   >
-                    <h3>Accede</h3>
+                    <h3> Accede</h3>
                   </Link>
                 </div>
               </Card.Body>
@@ -279,7 +286,7 @@ export const Home = () => {
             >
               <Card.Img
                 variant="top"
-                src="https://cdn-icons.flaticon.com/png/512/2804/premium/2804895.png?token=exp=1660169972~hmac=034a1fada5e8c836ec6299166669f009"
+                src="https://cdn-icons.flaticon.com/png/512/3098/premium/3098185.png?token=exp=1660267186~hmac=622590ba50d68fb2239166d516cd5f69"
                 style={{ borderRadius: "20px" }}
               />
               <Card.Body>
@@ -503,7 +510,7 @@ export const Home = () => {
             >
               <Card.Img
                 variant="top"
-                src="https://cdn-icons.flaticon.com/png/512/4924/premium/4924342.png?token=exp=1660190500~hmac=3edcb1fee3f8155c7d48561e8b755a81"
+                src="https://cdn-icons-png.flaticon.com/512/2224/2224109.png"
               />
               <Card.Body>
                 <Card.Title>

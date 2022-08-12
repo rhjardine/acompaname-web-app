@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
+import { FcHome } from "react-icons/fc";
 
 const InfoUtilidades = () => {
   return (
@@ -11,11 +12,11 @@ const InfoUtilidades = () => {
           style={{ backgroundColor: "#73b1c1", width: "250px" }}
           href="javascript: history.go(-1)"
         >
+          <FcHome />
           Atrás
         </Button>
         <div className="row">
           <div className="col-12" style={{ margin: "20px" }}>
-            
             <Accordion>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>

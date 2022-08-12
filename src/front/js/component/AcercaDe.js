@@ -1,9 +1,8 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
-import { FcHome } from "react-icons/fc";
 
-const Tratamientos = () => {
+const AcercaDe = () => {
   return (
     <div style={{ backgroundColor: "#dde0ab" }}>
       <div className="container">
@@ -12,8 +11,7 @@ const Tratamientos = () => {
           style={{ backgroundColor: "#73b1c1", width: "250px" }}
           href="javascript: history.go(-1)"
         >
-          <FcHome />
-          Atrás
+          Ir atras
         </Button>
         <div className="row">
           <div className="col-12" style={{ margin: "20px" }}>
@@ -272,4 +270,4 @@ const Tratamientos = () => {
   );
 };
 
-export default Tratamientos;
+export default AcercaDe;
