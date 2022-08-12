@@ -25,7 +25,7 @@ const Team = () => {
             <Card
               style={{
                 width: "17rem",
-                height: "40rem",
+                height: "45rem",
                 padding: "20px",
                 margin: "40px 10px 40px 10px",
                 alignItems: "center",
@@ -45,8 +45,9 @@ const Team = () => {
                 <Card.Text style={{ textAlign: "center" }}>
                   Más de 10 años de experiencia como realizador audiovisual con
                   experiencia en producción de eventos corporativos en vivo.
-                  Actualmente estoy culminando estudios como Desarrollador Full
-                  Stack en 4Geeks Academy
+                  Actualmente complemento mis habilidades tanto en el área de
+                  contenido como en el área técnica con un fabuloso Bootcamp
+                  como Desarrollador Full Stack en 4Geeks Academy.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -57,7 +58,7 @@ const Team = () => {
                 width: "17rem",
                 height: "45rem",
                 padding: "20px",
-                margin: "40px 10px 40px 10px",
+                margin: "40px 5px 40px 10px",
                 backgroundColor: "#feffdf",
                 borderRadius: "20px",
               }}
